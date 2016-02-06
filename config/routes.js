@@ -34,19 +34,20 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  },
-
-  'get /register': {
-  //  view: 'base/signup'
-  },
-  'post /signup': 'AccountController.register',
-
-  'get /login': {
-  //  view: 'base/login'
-  },
-  'post /login': 'AccountController.login',
-
-  '/logout': 'AccountController.logout'//,
+  }
+  //,
+  //
+  // 'get /register': {
+  // //  view: 'base/signup'
+  // },
+  // 'post /signup': 'AccountController.register',
+  //
+  // 'get /login': {
+  // //  view: 'base/login'
+  // },
+  // 'post /login': 'AccountController.login',
+  //
+  // '/logout': 'AccountController.logout'//,
 
 //  '/me': 'UserController.profile'
 
