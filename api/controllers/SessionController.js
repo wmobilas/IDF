@@ -63,7 +63,7 @@ module.exports = {
         } else {
           if (err) {
             waterlock.logger.debug(err);
-            return res.redirect('session/new')
+            return res.redirect('session/new');
           }
           return res.redirect('session/new');
         }

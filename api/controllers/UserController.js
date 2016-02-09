@@ -25,7 +25,7 @@ module.exports = require('waterlock').actions.user({
 
     var attr = {
       password: params.password
-    }
+    };
     attr[scopeKey] = params[scopeKey];
     criteria[scopeKey] = attr[scopeKey];
 
@@ -92,7 +92,7 @@ module.exports = require('waterlock').actions.user({
   },
   // route to [get] and show user
   show: function(req, res, next) {
-    var params = req.params.all()
+    var params = req.params.all();
     User.findOne(params.id, function foundUser(err, user) {
       if (err) {
         waterlock.logger.debug(err);
@@ -134,8 +134,8 @@ module.exports = require('waterlock').actions.user({
 
       res.view({
         user: user
-      })
-    })
+      });
+    });
   },
   // route to [post] edited fields and save to user/auth collections
   update: function(req, res, next) {

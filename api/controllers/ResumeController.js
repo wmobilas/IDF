@@ -17,7 +17,7 @@ module.exports = {
         target_position: params.target_position,
         rank: params.rank,
         photo: params.photo,
-        draftDate: params.draftDate,
+        draftDate: params.draftDate
 
       },
       //другая деятельность и значимые заслуги
@@ -96,7 +96,7 @@ module.exports = {
   },
   // route to [get] and show resume
   show: function(req, res, next) {
-    var params = req.params.all()
+    var params = req.params.all();
     Resume.findOne(params.id, function foundResume(err, resume) {
       if (err) {
         waterlock.logger.debug(err);
@@ -138,8 +138,8 @@ module.exports = {
 
       res.view({
         resume: resume
-      })
-    })
+      });
+    });
   },
   update: function(req, res, next) {
     var params = req.params.all(),
@@ -152,7 +152,7 @@ module.exports = {
         target_position: params.target_position,
         rank: params.rank,
         photo: params.photo,
-        draftDate: params.draftDate,
+        draftDate: params.draftDate
 
       },
       //другая деятельность и значимые заслуги

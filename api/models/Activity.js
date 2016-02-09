@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
 
     resumeId: {
-      model: 'resume',
+      model: 'resume'
     },
 
     activity: {

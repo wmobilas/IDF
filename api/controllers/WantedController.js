@@ -25,14 +25,5 @@ module.exports = {
           return response;
         }
       });
-  },
-
-  /**
-   * `WantedController.all()`
-   */
-  all: function(req, res) {
-    return res.json({
-      todo: 'all() is not implemented yet!'
-    });
   }
 };
