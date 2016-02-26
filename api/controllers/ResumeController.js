@@ -18,7 +18,6 @@ module.exports = {
         rank: params.rank,
         photo: params.photo,
         draftDate: params.draftDate
-
       },
       //другая деятельность и значимые заслуги
       activity = {
