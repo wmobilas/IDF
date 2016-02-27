@@ -27,9 +27,13 @@ module.exports = {
       education = {
         education: params.education
       },
+      //army experience
+      experience = {
+        background: params.experience
+      },
       //работа и года
-      background = {
-        background: params.background
+      work = {
+        background: params.work
       },
       tags = {
         tags: params.tags
@@ -142,7 +146,7 @@ module.exports = {
   },
   update: function(req, res, next) {
     var params = req.params.all(),
-      resumeObj = {
+      rresumeObj = {
         ownerId: params.ownerId,
         idArmy: params.idArmy,
         about: params.about,
@@ -152,7 +156,6 @@ module.exports = {
         rank: params.rank,
         photo: params.photo,
         draftDate: params.draftDate
-
       },
       //другая деятельность и значимые заслуги
       activity = {
@@ -162,9 +165,13 @@ module.exports = {
       education = {
         education: params.education
       },
+      //army experience
+      experience = {
+        background: params.experience
+      },
       //работа и года
-      background = {
-        background: params.background
+      work = {
+        background: params.work
       },
       tags = {
         tags: params.tags

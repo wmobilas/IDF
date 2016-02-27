@@ -26,8 +26,13 @@ module.exports = {
       required: false
     },
 
-    rank: {
+    unit: {
       type: 'string',
+      required: false
+    },
+
+    rank: {
+      type: 'integer',
       required: false
     },
 
@@ -40,7 +45,7 @@ module.exports = {
       type: 'date',
       required: false
     },
-    
+
     draftDate: {
       type: 'string',
       required: false
@@ -51,18 +56,26 @@ module.exports = {
       required: false
     },
 
-    target_position: {
+    targetPosition: {
       type: 'string',
       required: false
     },
 
-    activities: {
-      collection: 'activity',
+    //past army experience
+    experience: {
+      collection: 'experience',
       via: 'resumeId'
     },
 
-    background: {
-      collection: 'background',
+    //past work
+    work: {
+      collection: 'work',
+      via: 'resumeId'
+    },
+
+    //past activities
+    activity: {
+      collection: 'activity',
       via: 'resumeId'
     },
 

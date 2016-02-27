@@ -13,14 +13,25 @@ module.exports = {
       model: 'resume'
     },
 
-    education: {
+    institution: {
       type: 'string',
       required: true
     },
 
-    year: {
+    speciality: {
       type: 'string',
-      required: true
-    }
+      required: false
+    },
+
+    type: {
+      type: 'integer',
+      required: false
+    },
+
+    fromYear : { type: 'integer',
+    required: true },
+
+    toYear : { type: 'integer',
+    required: true }
   }
 };

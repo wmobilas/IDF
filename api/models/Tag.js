@@ -13,7 +13,7 @@ module.exports = {
       model: 'resume'
     },
 
-    tag: {
+    name: {
       type: 'string',
       required: true
     }

@@ -1,52 +1,49 @@
 /**
- * Vacancy.js
+ * Activity.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/#!documentation/models
  */
 
 module.exports = {
-
+  //army experience
   attributes: {
-    ownerId: {
-      type: 'integer',
+    unit: {
+      type: 'string',
       required: true
     },
-
-    name: {
+    
+    position: {
       type: 'string',
       required: true
     },
 
     rank: {
       type: 'integer',
-      required: false
+      required: true
     },
 
     competenceLevel: {
       type: 'integer',
-      required: false
+      required: true
     },
 
-    unit: {
-      type: 'string',
-      required: false
+    description: {
+      type: 'string'
     },
 
-    phone: {
-      type: 'string',
-      required: false
+    resumeId: {
+      model: 'resume'
     },
 
-    email: {
-      type: 'string',
-      required: false
-    },
-
-    duration: {
+    fromYear: {
       type: 'integer',
-      required: false
-    }
+      required: true
+    },
 
+    toYear: {
+      type: 'integer',
+      required: true
+    }
   }
 };
