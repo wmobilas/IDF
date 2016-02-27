@@ -1,241 +1,1708 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://slides.com/wmobilas/slides/live#/ -->
-<html class="sl-root decks live live-server mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded ua-windows ua-chrome has-visible-scrollbars wf-montserrat-n4-active wf-active fonts-are-ready reveal-is-ready presentation-started"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<script src="http://js-agent.newrelic.com/nr-885.min.js"></script><script async="" src="http://www.google-analytics.com/analytics.js"></script><script type="text/javascript">try {
-window.AG_onLoad = function(func) { if (window.addEventListener) { window.addEventListener('DOMContentLoaded', func); } };
-window.AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
-window.AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
-window.AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
-var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
-var AdFox_getCodeScript = function() {};
-AG_onLoad(function() { window.AG_each('iframe[id^="AdFox_iframe_"]', function(el) { if (el && el.parentNode) { el.parentNode.removeChild(el); } }); });
-var _gaq = []; var _gat = { _getTracker: function() { return { _initData: function(){}, _trackPageview: function(){}, _trackEvent: function(){}, _setAllowLinker: function() {}, _setCustomVar: function() {} } }, _createTracker: function() { return this._getTracker(); }, _anonymizeIp: function() {} };
-function urchinTracker() {};
-var nol_t = function() { return { record: function() { return { post: function() {} } } } };
-var addthis = { init: function() {}, addEventListener: function() {}, button: function() {}, counter: function() {}, update: function() {}, toolbox: function() {} };
-} catch (ex) { console.error('Error executing AG js: ' + ex); }</script><style type="text/css">#qoo-counter, #ramblerCounter, #top100counter, a[href^="http://hitcounter.ru/top/stat.php"], a[href^="http://top.mail.ru/jump"], a[href^="http://top100.rambler.ru/"], img[src*="counter.yadro.ru"], #ShareModule, #SocialButtons, #SocialSharingBtns, #___follow_0, #___plusone_0, #__okShare0, #addthis_toolbox, #block-social, #block_social_open, #blog-icon, #button_share, #chorus-social-fixed, #dd-fblike, #dd-fblike-iframe, #dd_ajax_float, #ebayShare_1, #f_social, #facebook-index, #facebookShare, #facebook_Badge, #facebook_like, #facebook_soc_button, #facebooktrend, #fb-friends-recent-activity, #fbLikeButton, #fb_iframe_widget, #fb_loader, #floating_social, #gigya-sharebar, #gplusone, #header-social, #large_share_wrapper, #likeThisPost, #menu-share, #odnaknopka, #ok_shareWidget, #ok_shareWidget1, #persistent-share, #pinterest-share, #pluso, #plusone, #rt_share, #sf_social_links { display: none!important; }
-#share-container, #share-holder, #share-links, #share42, #shareBar, #shareBarBottom_gig_containerParent, #shareBarTop, #shareBarTop_gig_containerParent, #shareBox, #shareFloat, #shareHorizontal, #shareStrip, #share_box, #share_button, #share_button_links, #share_buttons, #share_container, #share_control, #share_post, #share_social_sidebar, #sharebar, #sharebarTop, #sharebox, #shareinit, #sharemenu-wrap, #shares-id, #sharethis-wrapper, #smthemes_share, #social-actions, #social-bar-fixed, #social-bottom-article, #social-media, #social-plugins, #social-popup, #social-slider, #social-tools-panel, #social-widget, #social-wrapper, #socialBar, #socialBlock, #socialElementsRuDiv, #socialIcons, #socialMedia, #socialPlugins, #socialSlider, #social_block, #social_bookmarks, #social_buttons, #social_container, #social_modules { display: none!important; }
-#social_networks_container, #social_sidebar, #social_tools, #social_widget, #social_widgets, #socialbar, #socialbuttons, #socialbuttonsbox, #socializ, #socialize, #socializeit, #socialnets, #socialslider, #socialwidget-3, #sticky_sharing, #top-link-social, #top_social, #tt_social, #twitter-icon, #twitterTweet, #vk-share, #vkontakte-icon, #vkontakte_soc_button, .-share-buttons, .BookmarkShareForm, .FBpopupDiv, .ShareButton, .ShareRail, .SocialButtons, .SocialMedia_out, .ThSocial, .a-icon-share-facebook, .a-icon-share-pinterest, .a-icon-share-twitter, .addThis, .addthis_button, .addthis_button_facebook, .addthis_button_twitter, .addthis_default_style, .addtoany_share_save_container, .all_social, .all_top-link-social, .aol-share, .b-article__shares, .b-article__social, .b-btm-fastsocial, .b-post__social_holder, .b-post_social, .b-share, .b-share-list { display: none!important; }
-.b-share-wrap, .b-sharing, .b-social, .b-social-button, .b-social-buttons, .b-social-share, .b-social-sharing, .b-social_like_buttons, .b-socials__button, .b-socials__share, .b-socials_buttons, .badge-pinterest-share, .block-social-buttons, .block-social-dockable, .bookmarks-container, .bottom-share-buttons, .box-social, .box_btn_like, .buttons_share, .c-social-likes, .contentSocialBar, .cross_socia, .dcssb-float, .essb_links, .etsy-pin-it, .etsy-tweet, .facebook-like, .facebook-share, .facebook-small, .facebook_like_box, .facebook_share_size_Small, .facebooklike, .fb-button, .fb-like, .fb-like-box, .fb-like-button, .fb-share-button, .fb-share-container, .fb_like_contain, .fb_share, .fblike, .field-name-horizontal-social-widgets, .floatee-social-tail, .followFacebook, .followTwitter, .followYoutube, .g_plus, .gig-share-bar-container, .goodshare, .google-plus-follow { display: none!important; }
-.google-plus1, .google_plus1_badge, .googleplus-one, .gplus-like-button, .hdsocial2, .header-social, .heart-button, .heart-it-button, .help-social-buttons, .i_v_fb_like, .icon-digg, .icon-linkedin, .icon-pinterest, .icon-pinterest-share, .icon-reddit, .icon-stumbleupon, .img__sharer, .inline_socials, .j_social_share, .js-shares, .js-socialise, .js-socialise-wrapper, .large_share_holder, .lazysocialbuttons, .like_buttons, .like_fb_like_action, .likely, .likes-bar, .likes_block, .lj-like, .lj-like-item, .mashsb-container, .mod-follow, .mod-stay-connected, .mom-social-share, .news_social_button, .p-button-social, .pin-it-button, .pinit-btn, .pinterest-share, .pinterest-share-button, .pinterest-sharetool, .pinterest-small, .pluso, .pocket-btn, .popup-social, .post-item__social, .post-social-facebook, .post-social-gplus, .post-social-tweet { display: none!important; }
-.post-social-vk, .post_likes, .pp_socialButton, .really_simple_share, .recommend_fb_like_action, .rt_share, .s-sharelist, .serp-adv__banner, .share-bottom, .share-box, .share-btn, .share-btns, .share-button, .share-buttons, .share-cont, .share-counter, .share-general, .share-help, .share-icons-wrap, .share-pictures-overlay, .share-proposal, .share-regular, .share-sm-icons, .share-text, .share-tools, .share-wrap, .share3, .share42init, .shareBar, .shareButtons, .shareComment, .shareLinks, .shareSocialArticle, .shareThis, .shareThis__cue, .shareThis__wrapper, .shareWrapper, .share__button, .share__buttons, .share_absolute, .share_bar, .share_btns, .share_buttons, .share_click, .share_count, .share_links, .share_menu, .share_panel, .share_tools, .shareaholic-canvas { display: none!important; }
-.sharebar, .sharedaddy, .sharedefault, .shareholder, .sharelinks, .sharelist, .sharelist_vertical, .sharepost, .sharethis, .sharethis-container, .sharethisawrp, .sharetools, .sharing-popup-social, .sharing-tools, .sharrre_widget, .sidebar-share, .soc-button, .soc-buttons, .soc-likes, .soc-links, .soc24, .socBmFb, .socBmTw, .socFbShare, .socLinks, .socRight, .soc_button_sw, .soc_buttons, .soc_like, .soc_share, .soc_tabs, .socbclass, .socbuttons, .sociable, .social-bar, .social-block, .social-block-div, .social-block-links, .social-block-share, .social-button, .social-button-small, .social-button_holder, .social-fb-alt2, .social-fp-widget, .social-horizontal, .social-likes, .social-likes_single-w, .social-line, .social-links-tooltip, .social-love { display: none!important; }
-.social-media-box, .social-media-iframe, .social-menu, .social-networks, .social-profiles-widget, .social-roll, .social-row, .social-service, .social-share, .social-share-bar, .social-share-buttons, .social-share-buttons-block, .social-share-ic, .social-share-links, .social-share-widget, .social-sharing, .social-sidebar-wrap, .social-sitewide, .social-tab, .social-tab-large, .social-tab-mini, .social-tools, .social-twitter-alt2, .social-userbar-widget_container, .social-userbar-widget_social_container_short, .social-v, .social-widget, .social-widget-sidebar, .social-widgets, .social-widgets-in, .social2, .social4iv, .socialContainerWrap, .socialLinks, .socialNetworks, .socialSharing, .social_bar, .social_btn, .social_btns, .social_container, .social_fix, .social_knopki, .social_links, .social_links_top, .social_main, .social_networks, .social_share_left, .social_sharing, .social_st, .social_tab { display: none!important; }
-.social_wrap, .social_wrapper, .socialbutton, .socialicons-block, .socialite, .socialleft, .sociallinks, .socialmedia, .socials-static, .socialsection, .socialtab, .socialthis_button, .socialtools, .socialwrap, .socico-list, .socnet-sticker, .socseti, .ssba, .st-social-block, .st_digg_hcount, .st_digg_large, .st_facebook_hcount, .st_facebook_large, .st_linkedin_large, .st_pinterest_large, .st_plusone_hcount, .st_reddit_hcount, .st_sharethis_large, .st_stumbleupon_hcount, .st_stumbleupon_large, .st_twitter_hcount, .st_twitter_large, .stumbleupon, .surfinbird__like_button, .td-post-sharing, .top-share, .topic_share, .track-soccontrols, .tw-like-button, .tweet_link, .tweet_share, .twitter-follow-button, .vb-social-share, .viral-button-pinterest, .vk-like-button, .widget-sharebar-container, .widget_as_facebook_mem_likebox, .widget_socialwidget, .woo_share_buttons, .xing-button { display: none!important; }
-.ya-share, .ya-share-icon, .ya-share-large, .ya_share, .yashare-about, .yashare-auto-init, .zme-like, [id^="social-button-"], a[href^="//twitter.com/intent/tweet?"], a[href^="//vk.com/share.php"], a[href^="//www.facebook.com/sharer.php?"], a[href^="//www.facebook.com/sharer/sharer.php?"], a[href^="http://connect.mail.ru/share"], a[href^="http://m.facebook.com/sharer.php"], a[href^="http://plus.google.com/share"], a[href^="http://www.odnoklassniki.ru/dk?st.cmd=addShare"], a[href^="https://connect.mail.ru/share"], a[href^="https://www.linkedin.com/cws/share?url="], a[onclick^="window.open('http://twitter.com/share"], a[onclick^="window.open('http://www.facebook.com/sharer.php"], a[onclick^="window.open('http://www.odnoklassniki.ru/dk?st.cmd=addShare"], a[onlick*="https://www.facebook.com/sharer/"], div[class^="juiz_sps_"], div[class^="widget-social"], div[id^="___plus_"], div[id^="___plusone_"], div[id^="ok_group_widget"], div[id^="twitter-follow-button-"], div[id^="vk_like_"], ebayShare_2 { display: none!important; }
-</style><style type="text/css">a[href^="http://metrika.yandex.ru/stat/"], a[href^="https://metrika.yandex.ru/stat/"], img[width="88"][height="31"], #facebook-icon, #fb-root, #fb_groups, #flickr_badge_source, #flickr_badge_uber_wrapper, #odklocs0, #odklocs1, #sharer, #social, #socials, #vk_auth, #vk_donate, #vk_group, #vk_groups, #vk_like, #vk_poll, #vk_share, #vkshare0, .DiggThisButton, .addthis_toolbox, .btn-social, .google-buzz-button, .icon-facebook, .icon-facebook-squared, .icon-google-plus, .icon-gplus, .icon-rss, .icon-twitter, .img-share, .nav-social, .odkl-share-oc, .odkl-share-oc-fc, .odkl-share_button, .share-links, .share-menu, .share-panel, .sharebox, .skype-share, .social-buttons, .social-count, .social-icon, .social-icons, .social-icons-big, .social-link, .social-links, .social-media, .social-nav { display: none!important; }
-.socials, .vk-like, .vk_share_button, a.mrc__plugin_like_button, a.mrc__plugin_recommendations, a.mrc__plugin_share_friends, a.mrc__share, a.odkl-klass, a.odkl-klass-s, a.odkl-klass-stat, a[href="http://del.icio.us/post"], a[href="http://twitter.com/share"], a[href="http://www.addtoany.com/share_save"], a[href="http://www.delicious.com/save"], a[href="http://www.facebook.com/sharer.php"], a[href="http://www.simplesharebuttons.com"], a[href^="//plus.google.com/share"], a[href^="http://digg.com/submit?"], a[href^="http://pinterest.com/pin/create/button/"], a[href^="http://pinterest.com/pin/create/link/"], a[href^="http://service.weibo.com/share/share.php"], a[href^="http://share.yandex.ru/go.xml?service="], a[href^="http://twitter.com/?status="], a[href^="http://twitter.com/home?"], a[href^="http://twitter.com/intent/tweet?"], a[href^="http://twitter.com/share?"], a[href^="http://twitthis.com/twit?url"], a[href^="http://vk.com/share.php"], a[href^="http://vkontakte.ru/share.php"], a[href^="http://www.digg.com/submit?"], a[href^="http://www.facebook.com/share.php?u="], a[href^="http://www.facebook.com/sharer.php?"], a[href^="http://www.facebook.com/sharer/sharer.php"], a[href^="http://www.linkedin.com/shareArticle?"], a[href^="http://www.livejournal.com/update.bml"], a[href^="http://www.pinterest.com/pin/create/"], a[href^="http://www.reddit.com/submit"], a[href^="http://www.sharethis.com/share/?publisher="], a[href^="http://www.tumblr.com/share"], a[href^="https://facebook.com/sharer.php?"], a[href^="https://getpocket.com/edit?url="], a[href^="https://plus.google.com/share"], a[href^="https://share.yandex.net/go.xml?service="], a[href^="https://twitter.com/intent/follow?"], a[href^="https://twitter.com/intent/retweet?tweet_id"], a[href^="https://twitter.com/intent/tweet?"], a[href^="https://twitter.com/share"], a[href^="https://vk.com/share.php"], a[href^="https://www.facebook.com/sharer.php?"], a[href^="https://www.facebook.com/sharer/sharer.php"] { display: none!important; }
-a[href^="https://www.livejournal.com/update.bml"], a[href^="https://www.odnoklassniki.ru/dk?st.cmd=addShare"], a[href^="https://www.stumbleupon.com/submit?url="], a[href^="whatsapp://send?text="], a[name="fb_share"], a[onclick^="window.open ('http://www.facebook.com/sharer.php"], a[onclick^="window.open ('http://www.twitter.com/share?url="], a[onclick^="window.open('http://twitter.com/home?status"], a[onclick^="window.open('http://vk.com/share.php"], a[onclick^="window.open('https://twitter.com/share"], a[onclick^="window.open('https://www.facebook.com/sharer.php"], body .twitter-share-button, body div a[class*="pin_it_button"], form[action*="livejournal.com/update.bml"], input.fb, input.tweet, input.vk { display: none!important; }
-</style><script type="text/javascript">try {
-window.AG_onLoad = function(func) { if (window.addEventListener) { window.addEventListener('DOMContentLoaded', func); } };
-window.AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
-window.AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
-window.AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
-var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
-var _gaq = []; var _gat = { _getTracker: function() { return { _initData: function(){}, _trackPageview: function(){}, _trackEvent: function(){}, _setAllowLinker: function() {}, _setCustomVar: function() {} } }, _createTracker: function() { return this._getTracker(); }, _anonymizeIp: function() {} };
-function urchinTracker() {};
-var nol_t = function() { return { record: function() { return { post: function() {} } } } };
-var addthis = { init: function() {}, addEventListener: function() {}, button: function() {}, counter: function() {}, update: function() {}, toolbox: function() {} };
-} catch (ex) { console.error('Error executing AG js: ' + ex); }</script><style type="text/css"></style><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4fd2e9786b","applicationID":"1563900","transactionName":"cApZREQKWl9XFxZQVlAORB9aDEBW","queueTime":0,"applicationTime":16,"agent":""}</script>
-<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
-		<title>שפיצים - תפקיד שתמיד חלמתה</title>
-		<meta name="description" content="Slides">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link href="./styles/css" rel="stylesheet" type="text/css" data-application-font="opensans">
-		<link href="./styles/slides-1df814f963530a8557bab503c81c1049.css" media="all" rel="stylesheet">
-		<link href="./styles/application-a450f4d12874ea93102c41704c380e05.css" media="all" rel="stylesheet">
-		<link href="./styles/deck-v2-df3848b455a4a84f0b5dd323b4939351.css" media="all" rel="stylesheet">
+<html class="sl-root decks live live-server mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded ua-windows ua-chrome has-visible-scrollbars wf-montserrat-n4-active wf-active fonts-are-ready reveal-is-ready presentation-started">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<script src="http://js-agent.newrelic.com/nr-885.min.js"></script>
+	<script async="" src="http://www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript">
+		try {
+			window.AG_onLoad = function(func) {
+				if (window.addEventListener) {
+					window.addEventListener('DOMContentLoaded', func);
+				}
+			};
+			window.AG_removeElementById = function(id) {
+				var element = document.getElementById(id);
+				if (element && element.parentNode) {
+					element.parentNode.removeChild(element);
+				}
+			};
+			window.AG_removeElementBySelector = function(selector) {
+				if (!document.querySelectorAll) {
+					return;
+				}
+				var nodes = document.querySelectorAll(selector);
+				if (nodes) {
+					for (var i = 0; i < nodes.length; i++) {
+						if (nodes[i] && nodes[i].parentNode) {
+							nodes[i].parentNode.removeChild(nodes[i]);
+						}
+					}
+				}
+			};
+			window.AG_each = function(selector, fn) {
+				if (!document.querySelectorAll) return;
+				var elements = document.querySelectorAll(selector);
+				for (var i = 0; i < elements.length; i++) {
+					fn(elements[i]);
+				};
+			};
+			var AG_removeParent = function(el, fn) {
+				while (el && el.parentNode) {
+					if (fn(el)) {
+						el.parentNode.removeChild(el);
+						return;
+					}
+					el = el.parentNode;
+				}
+			};
+			var AdFox_getCodeScript = function() {};
+			AG_onLoad(function() {
+				window.AG_each('iframe[id^="AdFox_iframe_"]', function(el) {
+					if (el && el.parentNode) {
+						el.parentNode.removeChild(el);
+					}
+				});
+			});
+			var _gaq = [];
+			var _gat = {
+				_getTracker: function() {
+					return {
+						_initData: function() {},
+						_trackPageview: function() {},
+						_trackEvent: function() {},
+						_setAllowLinker: function() {},
+						_setCustomVar: function() {}
+					}
+				},
+				_createTracker: function() {
+					return this._getTracker();
+				},
+				_anonymizeIp: function() {}
+			};
+
+			function urchinTracker() {};
+			var nol_t = function() {
+				return {
+					record: function() {
+						return {
+							post: function() {}
+						}
+					}
+				}
+			};
+			var addthis = {
+				init: function() {},
+				addEventListener: function() {},
+				button: function() {},
+				counter: function() {},
+				update: function() {},
+				toolbox: function() {}
+			};
+		} catch (ex) {
+			console.error('Error executing AG js: ' + ex);
+		}
+	</script>
+	<style type="text/css">
+		#qoo-counter,
+		#ramblerCounter,
+		#top100counter,
+		a[href^="http://hitcounter.ru/top/stat.php"],
+		a[href^="http://top.mail.ru/jump"],
+		a[href^="http://top100.rambler.ru/"],
+		img[src*="counter.yadro.ru"],
+		#ShareModule,
+		#SocialButtons,
+		#SocialSharingBtns,
+		#___follow_0,
+		#___plusone_0,
+		#__okShare0,
+		#addthis_toolbox,
+		#block-social,
+		#block_social_open,
+		#blog-icon,
+		#button_share,
+		#chorus-social-fixed,
+		#dd-fblike,
+		#dd-fblike-iframe,
+		#dd_ajax_float,
+		#ebayShare_1,
+		#f_social,
+		#facebook-index,
+		#facebookShare,
+		#facebook_Badge,
+		#facebook_like,
+		#facebook_soc_button,
+		#facebooktrend,
+		#fb-friends-recent-activity,
+		#fbLikeButton,
+		#fb_iframe_widget,
+		#fb_loader,
+		#floating_social,
+		#gigya-sharebar,
+		#gplusone,
+		#header-social,
+		#large_share_wrapper,
+		#likeThisPost,
+		#menu-share,
+		#odnaknopka,
+		#ok_shareWidget,
+		#ok_shareWidget1,
+		#persistent-share,
+		#pinterest-share,
+		#pluso,
+		#plusone,
+		#rt_share,
+		#sf_social_links {
+			display: none!important;
+		}
+
+		#share-container,
+		#share-holder,
+		#share-links,
+		#share42,
+		#shareBar,
+		#shareBarBottom_gig_containerParent,
+		#shareBarTop,
+		#shareBarTop_gig_containerParent,
+		#shareBox,
+		#shareFloat,
+		#shareHorizontal,
+		#shareStrip,
+		#share_box,
+		#share_button,
+		#share_button_links,
+		#share_buttons,
+		#share_container,
+		#share_control,
+		#share_post,
+		#share_social_sidebar,
+		#sharebar,
+		#sharebarTop,
+		#sharebox,
+		#shareinit,
+		#sharemenu-wrap,
+		#shares-id,
+		#sharethis-wrapper,
+		#smthemes_share,
+		#social-actions,
+		#social-bar-fixed,
+		#social-bottom-article,
+		#social-media,
+		#social-plugins,
+		#social-popup,
+		#social-slider,
+		#social-tools-panel,
+		#social-widget,
+		#social-wrapper,
+		#socialBar,
+		#socialBlock,
+		#socialElementsRuDiv,
+		#socialIcons,
+		#socialMedia,
+		#socialPlugins,
+		#socialSlider,
+		#social_block,
+		#social_bookmarks,
+		#social_buttons,
+		#social_container,
+		#social_modules {
+			display: none!important;
+		}
+
+		#social_networks_container,
+		#social_sidebar,
+		#social_tools,
+		#social_widget,
+		#social_widgets,
+		#socialbar,
+		#socialbuttons,
+		#socialbuttonsbox,
+		#socializ,
+		#socialize,
+		#socializeit,
+		#socialnets,
+		#socialslider,
+		#socialwidget-3,
+		#sticky_sharing,
+		#top-link-social,
+		#top_social,
+		#tt_social,
+		#twitter-icon,
+		#twitterTweet,
+		#vk-share,
+		#vkontakte-icon,
+		#vkontakte_soc_button,
+		.-share-buttons,
+		.BookmarkShareForm,
+		.FBpopupDiv,
+		.ShareButton,
+		.ShareRail,
+		.SocialButtons,
+		.SocialMedia_out,
+		.ThSocial,
+		.a-icon-share-facebook,
+		.a-icon-share-pinterest,
+		.a-icon-share-twitter,
+		.addThis,
+		.addthis_button,
+		.addthis_button_facebook,
+		.addthis_button_twitter,
+		.addthis_default_style,
+		.addtoany_share_save_container,
+		.all_social,
+		.all_top-link-social,
+		.aol-share,
+		.b-article__shares,
+		.b-article__social,
+		.b-btm-fastsocial,
+		.b-post__social_holder,
+		.b-post_social,
+		.b-share,
+		.b-share-list {
+			display: none!important;
+		}
+
+		.b-share-wrap,
+		.b-sharing,
+		.b-social,
+		.b-social-button,
+		.b-social-buttons,
+		.b-social-share,
+		.b-social-sharing,
+		.b-social_like_buttons,
+		.b-socials__button,
+		.b-socials__share,
+		.b-socials_buttons,
+		.badge-pinterest-share,
+		.block-social-buttons,
+		.block-social-dockable,
+		.bookmarks-container,
+		.bottom-share-buttons,
+		.box-social,
+		.box_btn_like,
+		.buttons_share,
+		.c-social-likes,
+		.contentSocialBar,
+		.cross_socia,
+		.dcssb-float,
+		.essb_links,
+		.etsy-pin-it,
+		.etsy-tweet,
+		.facebook-like,
+		.facebook-share,
+		.facebook-small,
+		.facebook_like_box,
+		.facebook_share_size_Small,
+		.facebooklike,
+		.fb-button,
+		.fb-like,
+		.fb-like-box,
+		.fb-like-button,
+		.fb-share-button,
+		.fb-share-container,
+		.fb_like_contain,
+		.fb_share,
+		.fblike,
+		.field-name-horizontal-social-widgets,
+		.floatee-social-tail,
+		.followFacebook,
+		.followTwitter,
+		.followYoutube,
+		.g_plus,
+		.gig-share-bar-container,
+		.goodshare,
+		.google-plus-follow {
+			display: none!important;
+		}
+
+		.google-plus1,
+		.google_plus1_badge,
+		.googleplus-one,
+		.gplus-like-button,
+		.hdsocial2,
+		.header-social,
+		.heart-button,
+		.heart-it-button,
+		.help-social-buttons,
+		.i_v_fb_like,
+		.icon-digg,
+		.icon-linkedin,
+		.icon-pinterest,
+		.icon-pinterest-share,
+		.icon-reddit,
+		.icon-stumbleupon,
+		.img__sharer,
+		.inline_socials,
+		.j_social_share,
+		.js-shares,
+		.js-socialise,
+		.js-socialise-wrapper,
+		.large_share_holder,
+		.lazysocialbuttons,
+		.like_buttons,
+		.like_fb_like_action,
+		.likely,
+		.likes-bar,
+		.likes_block,
+		.lj-like,
+		.lj-like-item,
+		.mashsb-container,
+		.mod-follow,
+		.mod-stay-connected,
+		.mom-social-share,
+		.news_social_button,
+		.p-button-social,
+		.pin-it-button,
+		.pinit-btn,
+		.pinterest-share,
+		.pinterest-share-button,
+		.pinterest-sharetool,
+		.pinterest-small,
+		.pluso,
+		.pocket-btn,
+		.popup-social,
+		.post-item__social,
+		.post-social-facebook,
+		.post-social-gplus,
+		.post-social-tweet {
+			display: none!important;
+		}
+
+		.post-social-vk,
+		.post_likes,
+		.pp_socialButton,
+		.really_simple_share,
+		.recommend_fb_like_action,
+		.rt_share,
+		.s-sharelist,
+		.serp-adv__banner,
+		.share-bottom,
+		.share-box,
+		.share-btn,
+		.share-btns,
+		.share-button,
+		.share-buttons,
+		.share-cont,
+		.share-counter,
+		.share-general,
+		.share-help,
+		.share-icons-wrap,
+		.share-pictures-overlay,
+		.share-proposal,
+		.share-regular,
+		.share-sm-icons,
+		.share-text,
+		.share-tools,
+		.share-wrap,
+		.share3,
+		.share42init,
+		.shareBar,
+		.shareButtons,
+		.shareComment,
+		.shareLinks,
+		.shareSocialArticle,
+		.shareThis,
+		.shareThis__cue,
+		.shareThis__wrapper,
+		.shareWrapper,
+		.share__button,
+		.share__buttons,
+		.share_absolute,
+		.share_bar,
+		.share_btns,
+		.share_buttons,
+		.share_click,
+		.share_count,
+		.share_links,
+		.share_menu,
+		.share_panel,
+		.share_tools,
+		.shareaholic-canvas {
+			display: none!important;
+		}
+
+		.sharebar,
+		.sharedaddy,
+		.sharedefault,
+		.shareholder,
+		.sharelinks,
+		.sharelist,
+		.sharelist_vertical,
+		.sharepost,
+		.sharethis,
+		.sharethis-container,
+		.sharethisawrp,
+		.sharetools,
+		.sharing-popup-social,
+		.sharing-tools,
+		.sharrre_widget,
+		.sidebar-share,
+		.soc-button,
+		.soc-buttons,
+		.soc-likes,
+		.soc-links,
+		.soc24,
+		.socBmFb,
+		.socBmTw,
+		.socFbShare,
+		.socLinks,
+		.socRight,
+		.soc_button_sw,
+		.soc_buttons,
+		.soc_like,
+		.soc_share,
+		.soc_tabs,
+		.socbclass,
+		.socbuttons,
+		.sociable,
+		.social-bar,
+		.social-block,
+		.social-block-div,
+		.social-block-links,
+		.social-block-share,
+		.social-button,
+		.social-button-small,
+		.social-button_holder,
+		.social-fb-alt2,
+		.social-fp-widget,
+		.social-horizontal,
+		.social-likes,
+		.social-likes_single-w,
+		.social-line,
+		.social-links-tooltip,
+		.social-love {
+			display: none!important;
+		}
+
+		.social-media-box,
+		.social-media-iframe,
+		.social-menu,
+		.social-networks,
+		.social-profiles-widget,
+		.social-roll,
+		.social-row,
+		.social-service,
+		.social-share,
+		.social-share-bar,
+		.social-share-buttons,
+		.social-share-buttons-block,
+		.social-share-ic,
+		.social-share-links,
+		.social-share-widget,
+		.social-sharing,
+		.social-sidebar-wrap,
+		.social-sitewide,
+		.social-tab,
+		.social-tab-large,
+		.social-tab-mini,
+		.social-tools,
+		.social-twitter-alt2,
+		.social-userbar-widget_container,
+		.social-userbar-widget_social_container_short,
+		.social-v,
+		.social-widget,
+		.social-widget-sidebar,
+		.social-widgets,
+		.social-widgets-in,
+		.social2,
+		.social4iv,
+		.socialContainerWrap,
+		.socialLinks,
+		.socialNetworks,
+		.socialSharing,
+		.social_bar,
+		.social_btn,
+		.social_btns,
+		.social_container,
+		.social_fix,
+		.social_knopki,
+		.social_links,
+		.social_links_top,
+		.social_main,
+		.social_networks,
+		.social_share_left,
+		.social_sharing,
+		.social_st,
+		.social_tab {
+			display: none!important;
+		}
+
+		.social_wrap,
+		.social_wrapper,
+		.socialbutton,
+		.socialicons-block,
+		.socialite,
+		.socialleft,
+		.sociallinks,
+		.socialmedia,
+		.socials-static,
+		.socialsection,
+		.socialtab,
+		.socialthis_button,
+		.socialtools,
+		.socialwrap,
+		.socico-list,
+		.socnet-sticker,
+		.socseti,
+		.ssba,
+		.st-social-block,
+		.st_digg_hcount,
+		.st_digg_large,
+		.st_facebook_hcount,
+		.st_facebook_large,
+		.st_linkedin_large,
+		.st_pinterest_large,
+		.st_plusone_hcount,
+		.st_reddit_hcount,
+		.st_sharethis_large,
+		.st_stumbleupon_hcount,
+		.st_stumbleupon_large,
+		.st_twitter_hcount,
+		.st_twitter_large,
+		.stumbleupon,
+		.surfinbird__like_button,
+		.td-post-sharing,
+		.top-share,
+		.topic_share,
+		.track-soccontrols,
+		.tw-like-button,
+		.tweet_link,
+		.tweet_share,
+		.twitter-follow-button,
+		.vb-social-share,
+		.viral-button-pinterest,
+		.vk-like-button,
+		.widget-sharebar-container,
+		.widget_as_facebook_mem_likebox,
+		.widget_socialwidget,
+		.woo_share_buttons,
+		.xing-button {
+			display: none!important;
+		}
+
+		.ya-share,
+		.ya-share-icon,
+		.ya-share-large,
+		.ya_share,
+		.yashare-about,
+		.yashare-auto-init,
+		.zme-like,
+		[id^="social-button-"],
+		a[href^="//twitter.com/intent/tweet?"],
+		a[href^="//vk.com/share.php"],
+		a[href^="//www.facebook.com/sharer.php?"],
+		a[href^="//www.facebook.com/sharer/sharer.php?"],
+		a[href^="http://connect.mail.ru/share"],
+		a[href^="http://m.facebook.com/sharer.php"],
+		a[href^="http://plus.google.com/share"],
+		a[href^="http://www.odnoklassniki.ru/dk?st.cmd=addShare"],
+		a[href^="https://connect.mail.ru/share"],
+		a[href^="https://www.linkedin.com/cws/share?url="],
+		a[onclick^="window.open('http://twitter.com/share"],
+		a[onclick^="window.open('http://www.facebook.com/sharer.php"],
+		a[onclick^="window.open('http://www.odnoklassniki.ru/dk?st.cmd=addShare"],
+		a[onlick*="https://www.facebook.com/sharer/"],
+		div[class^="juiz_sps_"],
+		div[class^="widget-social"],
+		div[id^="___plus_"],
+		div[id^="___plusone_"],
+		div[id^="ok_group_widget"],
+		div[id^="twitter-follow-button-"],
+		div[id^="vk_like_"],
+		ebayShare_2 {
+			display: none!important;
+		}
+	</style>
+	<style type="text/css">
+		a[href^="http://metrika.yandex.ru/stat/"],
+		a[href^="https://metrika.yandex.ru/stat/"],
+		img[width="88"][height="31"],
+		#facebook-icon,
+		#fb-root,
+		#fb_groups,
+		#flickr_badge_source,
+		#flickr_badge_uber_wrapper,
+		#odklocs0,
+		#odklocs1,
+		#sharer,
+		#social,
+		#socials,
+		#vk_auth,
+		#vk_donate,
+		#vk_group,
+		#vk_groups,
+		#vk_like,
+		#vk_poll,
+		#vk_share,
+		#vkshare0,
+		.DiggThisButton,
+		.addthis_toolbox,
+		.btn-social,
+		.google-buzz-button,
+		.icon-facebook,
+		.icon-facebook-squared,
+		.icon-google-plus,
+		.icon-gplus,
+		.icon-rss,
+		.icon-twitter,
+		.img-share,
+		.nav-social,
+		.odkl-share-oc,
+		.odkl-share-oc-fc,
+		.odkl-share_button,
+		.share-links,
+		.share-menu,
+		.share-panel,
+		.sharebox,
+		.skype-share,
+		.social-buttons,
+		.social-count,
+		.social-icon,
+		.social-icons,
+		.social-icons-big,
+		.social-link,
+		.social-links,
+		.social-media,
+		.social-nav {
+			display: none!important;
+		}
+
+		.socials,
+		.vk-like,
+		.vk_share_button,
+		a.mrc__plugin_like_button,
+		a.mrc__plugin_recommendations,
+		a.mrc__plugin_share_friends,
+		a.mrc__share,
+		a.odkl-klass,
+		a.odkl-klass-s,
+		a.odkl-klass-stat,
+		a[href="http://del.icio.us/post"],
+		a[href="http://twitter.com/share"],
+		a[href="http://www.addtoany.com/share_save"],
+		a[href="http://www.delicious.com/save"],
+		a[href="http://www.facebook.com/sharer.php"],
+		a[href="http://www.simplesharebuttons.com"],
+		a[href^="//plus.google.com/share"],
+		a[href^="http://digg.com/submit?"],
+		a[href^="http://pinterest.com/pin/create/button/"],
+		a[href^="http://pinterest.com/pin/create/link/"],
+		a[href^="http://service.weibo.com/share/share.php"],
+		a[href^="http://share.yandex.ru/go.xml?service="],
+		a[href^="http://twitter.com/?status="],
+		a[href^="http://twitter.com/home?"],
+		a[href^="http://twitter.com/intent/tweet?"],
+		a[href^="http://twitter.com/share?"],
+		a[href^="http://twitthis.com/twit?url"],
+		a[href^="http://vk.com/share.php"],
+		a[href^="http://vkontakte.ru/share.php"],
+		a[href^="http://www.digg.com/submit?"],
+		a[href^="http://www.facebook.com/share.php?u="],
+		a[href^="http://www.facebook.com/sharer.php?"],
+		a[href^="http://www.facebook.com/sharer/sharer.php"],
+		a[href^="http://www.linkedin.com/shareArticle?"],
+		a[href^="http://www.livejournal.com/update.bml"],
+		a[href^="http://www.pinterest.com/pin/create/"],
+		a[href^="http://www.reddit.com/submit"],
+		a[href^="http://www.sharethis.com/share/?publisher="],
+		a[href^="http://www.tumblr.com/share"],
+		a[href^="https://facebook.com/sharer.php?"],
+		a[href^="https://getpocket.com/edit?url="],
+		a[href^="https://plus.google.com/share"],
+		a[href^="https://share.yandex.net/go.xml?service="],
+		a[href^="https://twitter.com/intent/follow?"],
+		a[href^="https://twitter.com/intent/retweet?tweet_id"],
+		a[href^="https://twitter.com/intent/tweet?"],
+		a[href^="https://twitter.com/share"],
+		a[href^="https://vk.com/share.php"],
+		a[href^="https://www.facebook.com/sharer.php?"],
+		a[href^="https://www.facebook.com/sharer/sharer.php"] {
+			display: none!important;
+		}
+
+		a[href^="https://www.livejournal.com/update.bml"],
+		a[href^="https://www.odnoklassniki.ru/dk?st.cmd=addShare"],
+		a[href^="https://www.stumbleupon.com/submit?url="],
+		a[href^="whatsapp://send?text="],
+		a[name="fb_share"],
+		a[onclick^="window.open ('http://www.facebook.com/sharer.php"],
+		a[onclick^="window.open ('http://www.twitter.com/share?url="],
+		a[onclick^="window.open('http://twitter.com/home?status"],
+		a[onclick^="window.open('http://vk.com/share.php"],
+		a[onclick^="window.open('https://twitter.com/share"],
+		a[onclick^="window.open('https://www.facebook.com/sharer.php"],
+		body .twitter-share-button,
+		body div a[class*="pin_it_button"],
+		form[action*="livejournal.com/update.bml"],
+		input.fb,
+		input.tweet,
+		input.vk {
+			display: none!important;
+		}
+	</style>
+	<script type="text/javascript">
+		try {
+			window.AG_onLoad = function(func) {
+				if (window.addEventListener) {
+					window.addEventListener('DOMContentLoaded', func);
+				}
+			};
+			window.AG_removeElementById = function(id) {
+				var element = document.getElementById(id);
+				if (element && element.parentNode) {
+					element.parentNode.removeChild(element);
+				}
+			};
+			window.AG_removeElementBySelector = function(selector) {
+				if (!document.querySelectorAll) {
+					return;
+				}
+				var nodes = document.querySelectorAll(selector);
+				if (nodes) {
+					for (var i = 0; i < nodes.length; i++) {
+						if (nodes[i] && nodes[i].parentNode) {
+							nodes[i].parentNode.removeChild(nodes[i]);
+						}
+					}
+				}
+			};
+			window.AG_each = function(selector, fn) {
+				if (!document.querySelectorAll) return;
+				var elements = document.querySelectorAll(selector);
+				for (var i = 0; i < elements.length; i++) {
+					fn(elements[i]);
+				};
+			};
+			var AG_removeParent = function(el, fn) {
+				while (el && el.parentNode) {
+					if (fn(el)) {
+						el.parentNode.removeChild(el);
+						return;
+					}
+					el = el.parentNode;
+				}
+			};
+			var _gaq = [];
+			var _gat = {
+				_getTracker: function() {
+					return {
+						_initData: function() {},
+						_trackPageview: function() {},
+						_trackEvent: function() {},
+						_setAllowLinker: function() {},
+						_setCustomVar: function() {}
+					}
+				},
+				_createTracker: function() {
+					return this._getTracker();
+				},
+				_anonymizeIp: function() {}
+			};
+
+			function urchinTracker() {};
+			var nol_t = function() {
+				return {
+					record: function() {
+						return {
+							post: function() {}
+						}
+					}
+				}
+			};
+			var addthis = {
+				init: function() {},
+				addEventListener: function() {},
+				button: function() {},
+				counter: function() {},
+				update: function() {},
+				toolbox: function() {}
+			};
+		} catch (ex) {
+			console.error('Error executing AG js: ' + ex);
+		}
+	</script>
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		window.NREUM || (NREUM = {});
+		NREUM.info = {
+			"beacon": "bam.nr-data.net",
+			"errorBeacon": "bam.nr-data.net",
+			"licenseKey": "4fd2e9786b",
+			"applicationID": "1563900",
+			"transactionName": "cApZREQKWl9XFxZQVlAORB9aDEBW",
+			"queueTime": 0,
+			"applicationTime": 16,
+			"agent": ""
+		}
+	</script>
+	<script type="text/javascript">
+		window.NREUM || (NREUM = {}), __nr_require = function(e, t, n) {
+			function r(n) {
+				if (!t[n]) {
+					var o = t[n] = {
+						exports: {}
+					};
+					e[n][0].call(o.exports, function(t) {
+						var o = e[n][1][t];
+						return r(o || t)
+					}, o, o.exports)
+				}
+				return t[n].exports
+			}
+			if ("function" == typeof __nr_require) return __nr_require;
+			for (var o = 0; o < n.length; o++) r(n[o]);
+			return r
+		}({
+			QJf3ax: [function(e, t) {
+				function n() {}
+
+				function r(e) {
+					function t(e) {
+						return e && e instanceof n ? e : e ? a(e, i, o) : o()
+					}
+
+					function s(n, r, o) {
+						e && e(n, r, o);
+						for (var i = t(o), a = l(n), u = a.length, f = 0; u > f; f++) a[f].apply(i, r);
+						var s = c[w[n]];
+						return s && s.push([h, n, r, i]), i
+					}
+
+					function p(e, t) {
+						g[e] = l(e).concat(t)
+					}
+
+					function l(e) {
+						return g[e] || []
+					}
+
+					function d(e) {
+						return f[e] = f[e] || r(s)
+					}
+
+					function v(e, t) {
+						u(e, function(e, n) {
+							t = t || "feature", w[n] = t, t in c || (c[t] = [])
+						})
+					}
+					var g = {},
+						w = {},
+						h = {
+							on: p,
+							emit: s,
+							get: d,
+							listeners: l,
+							context: t,
+							buffer: v
+						};
+					return h
+				}
+
+				function o() {
+					return new n
+				}
+				var i = "nr@context",
+					a = e("gos"),
+					u = e(1),
+					c = {},
+					f = {},
+					s = t.exports = r();
+				s.backlog = c
+			}, {
+				1: 12,
+				gos: "7eSDFh"
+			}],
+			ee: [function(e, t) {
+				t.exports = e("QJf3ax")
+			}, {}],
+			3: [function(e, t) {
+				function n(e, t) {
+					return function() {
+						r(e, [(new Date).getTime()].concat(i(arguments)), null, t)
+					}
+				}
+				var r = e("handle"),
+					o = e(1),
+					i = e(2);
+				"undefined" == typeof window.newrelic && (newrelic = NREUM);
+				var a = ["setPageViewName", "addPageAction", "setCustomAttribute", "finished", "addToTrace", "inlineHit"],
+					u = ["addPageAction"],
+					c = "api-";
+				o(a, function(e, t) {
+					newrelic[t] = n(c + t, "api")
+				}), o(u, function(e, t) {
+					newrelic[t] = n(c + t)
+				}), t.exports = newrelic, newrelic.noticeError = function(e) {
+					"string" == typeof e && (e = new Error(e)), r("err", [e, (new Date).getTime()])
+				}
+			}, {
+				1: 12,
+				2: 13,
+				handle: "D5DuLP"
+			}],
+			gos: [function(e, t) {
+				t.exports = e("7eSDFh")
+			}, {}],
+			"7eSDFh": [function(e, t) {
+				function n(e, t, n) {
+					if (r.call(e, t)) return e[t];
+					var o = n();
+					if (Object.defineProperty && Object.keys) try {
+						return Object.defineProperty(e, t, {
+							value: o,
+							writable: !0,
+							enumerable: !1
+						}), o
+					} catch (i) {}
+					return e[t] = o, o
+				}
+				var r = Object.prototype.hasOwnProperty;
+				t.exports = n
+			}, {}],
+			handle: [function(e, t) {
+				t.exports = e("D5DuLP")
+			}, {}],
+			D5DuLP: [function(e, t) {
+				function n(e, t, n, o) {
+					r.buffer([e], o), r.emit(e, t, n)
+				}
+				var r = e("ee").get("handle");
+				t.exports = n, n.ee = r
+			}, {
+				ee: "QJf3ax"
+			}],
+			XL7HBI: [function(e, t) {
+				function n(e) {
+					var t = typeof e;
+					return !e || "object" !== t && "function" !== t ? -1 : e === window ? 0 : i(e, o, function() {
+						return r++
+					})
+				}
+				var r = 1,
+					o = "nr@id",
+					i = e("gos");
+				t.exports = n
+			}, {
+				gos: "7eSDFh"
+			}],
+			id: [function(e, t) {
+				t.exports = e("XL7HBI")
+			}, {}],
+			G9z0Bl: [function(e, t) {
+				function n() {
+					if (!v++) {
+						var e = d.info = NREUM.info,
+							t = f.getElementsByTagName("script")[0];
+						if (e && e.licenseKey && e.applicationID && t) {
+							u(p, function(t, n) {
+								e[t] || (e[t] = n)
+							});
+							var n = "https" === s.split(":")[0] || e.sslForHttp;
+							d.proto = n ? "https://" : "http://", a("mark", ["onload", i()], null, "api");
+							var r = f.createElement("script");
+							r.src = d.proto + e.agent, t.parentNode.insertBefore(r, t)
+						}
+					}
+				}
+
+				function r() {
+					"complete" === f.readyState && o()
+				}
+
+				function o() {
+					a("mark", ["domContent", i()], null, "api")
+				}
+
+				function i() {
+					return (new Date).getTime()
+				}
+				var a = e("handle"),
+					u = e(1),
+					c = window,
+					f = c.document;
+				NREUM.o = {
+					ST: setTimeout,
+					XHR: c.XMLHttpRequest,
+					REQ: c.Request,
+					EV: c.Event,
+					PR: c.Promise,
+					MO: c.MutationObserver
+				}, e(2);
+				var s = ("" + location).split("?")[0],
+					p = {
+						beacon: "bam.nr-data.net",
+						errorBeacon: "bam.nr-data.net",
+						agent: "js-agent.newrelic.com/nr-885.min.js"
+					},
+					l = window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && !/CriOS/.test(navigator.userAgent),
+					d = t.exports = {
+						offset: i(),
+						origin: s,
+						features: {},
+						xhrWrappable: l
+					};
+				f.addEventListener ? (f.addEventListener("DOMContentLoaded", o, !1), c.addEventListener("load", n, !1)) : (f.attachEvent("onreadystatechange", r), c.attachEvent("onload", n)), a("mark", ["firstbyte", i()], null, "api");
+				var v = 0
+			}, {
+				1: 12,
+				2: 3,
+				handle: "D5DuLP"
+			}],
+			loader: [function(e, t) {
+				t.exports = e("G9z0Bl")
+			}, {}],
+			12: [function(e, t) {
+				function n(e, t) {
+					var n = [],
+						o = "",
+						i = 0;
+					for (o in e) r.call(e, o) && (n[i] = t(o, e[o]), i += 1);
+					return n
+				}
+				var r = Object.prototype.hasOwnProperty;
+				t.exports = n
+			}, {}],
+			13: [function(e, t) {
+				function n(e, t, n) {
+					t || (t = 0), "undefined" == typeof n && (n = e ? e.length : 0);
+					for (var r = -1, o = n - t || 0, i = Array(0 > o ? 0 : o); ++r < o;) i[r] = e[t + r];
+					return i
+				}
+				t.exports = n
+			}, {}]
+		}, {}, ["G9z0Bl"]);
+	</script>
+	<title>שפיצים - תפקיד שתמיד חלמתה</title>
+	<meta name="description" content="Slides">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="./styles/css" rel="stylesheet" type="text/css" data-application-font="opensans">
+	<link href="./styles/slides-1df814f963530a8557bab503c81c1049.css" media="all" rel="stylesheet">
+	<link href="./styles/application-a450f4d12874ea93102c41704c380e05.css" media="all" rel="stylesheet">
+	<link href="./styles/deck-v2-df3848b455a4a84f0b5dd323b4939351.css" media="all" rel="stylesheet">
 
 
 
-<style id="user-css-output" type="text/css"></style>
-		<meta content="authenticity_token" name="csrf-param">
-<meta content="KNHltMkvswtpTzmz0n09/BUV7UgINuOEznNKAciLA40=" name="csrf-token">
-		<script type="text/javascript">
-  if( !/dnt=1/.test( window.location.search ) ) {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<style id="user-css-output" type="text/css"></style>
+	<meta content="authenticity_token" name="csrf-param">
+	<meta content="KNHltMkvswtpTzmz0n09/BUV7UgINuOEznNKAciLA40=" name="csrf-token">
+	<script type="text/javascript">
+		if (!/dnt=1/.test(window.location.search)) {
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-39670045-1', { 'userId': '443116' });
-    ga('send', 'pageview');
+			ga('create', 'UA-39670045-1', {
+				'userId': '443116'
+			});
+			ga('send', 'pageview');
 
-  }
-</script>
-		<!--[if lt IE 9]>
+		}
+	</script>
+	<!--[if lt IE 9]>
     <script src="//assets.slid.es/assets/html5shiv-b51d49ab0e89834a02ffce4a59905afb.js"></script>
 <![endif]-->
-	<link rel="stylesheet" href="./styles/montserrat.css"><style type="text/css"></style><style></style></head>
-	<body>
-		<div class="page-loader frozen">
-			<div class="page-loader-inner">
-				<div class="page-loader-spinner"></div>
-				<p class="page-loader-message">Loading deck</p>
+	<link rel="stylesheet" href="./styles/montserrat.css">
+	<style type="text/css"></style>
+	<style></style>
+</head>
+
+<body>
+	<div class="page-loader frozen">
+		<div class="page-loader-inner">
+			<div class="page-loader-spinner"></div>
+			<p class="page-loader-message">Loading deck</p>
+		</div>
+	</div>
+
+	<div class="reveal-viewport theme-font-montserrat theme-color-sky-blue">
+		<div class="reveal concave" role="application" data-transition-speed="default" data-background-transition="zoom">
+			<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.901143);">
+				<section class="stack present" style="display: block;" data-previous-indexv="0">
+					<section class="present" style="display: block;">
+
+
+						<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 439.919px; height: 866px; left: 260px; top: 70px;" data-block-id="8c1953fb8afa4cf195595bccd2788f9e">
+							<div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1208" data-natural-height="2378" src="./images/android.gif"></div>
+						</div>
+					</section>
+					<section class="has-light-background future" data-background-color="#8e7cc3" style="display: block;" hidden="" aria-hidden="true">
+
+
+
+						<div class="sl-block" data-block-type="image" data-block-id="9468fd78c9891bf51d2c17dcb54d0fbe" style="min-width: 30px; min-height: 30px; width: 371px; height: 393.286px; left: 0px; top: 237px;">
+							<div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img data-natural-width="849" data-natural-height="900" style="" src="./images/soldier.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="be677cb82d5fb59a99f78dc3ab8ce2e1" style="min-width: 30px; min-height: 30px; width: 129px; height: 129px; left: 0px; top: 173px;">
+							<div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="1"><img style="" data-natural-width="512" data-natural-height="512" src="./images/bubbleright.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="63c06a0b33391d5d361c4ee871100ae0" style="min-width: 30px; min-height: 30px; width: 400.143px; height: 424px; left: 560px; top: 206px;">
+							<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0"><img data-natural-width="1107" data-natural-height="1173" style="" src="./images/officer.gif"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="adbd583958ba5d3d9147a3ce2cf37146" style="min-width: 30px; min-height: 30px; width: 123px; height: 123px; left: 757px; top: 173px;">
+							<div class="sl-block-content fragment" style="z-index: 0;" data-fragment-index="2"><img data-natural-width="512" data-natural-height="512" style="" src="./images/bubbleleft.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="f9798dd70612a2e21516428299ff24c4" style="min-width: 30px; min-height: 30px; width: 90px; height: 90px; left: 396px; top: 287px;">
+							<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="5"><img style="" data-natural-width="900" data-natural-height="900" src="./images/gear.png"></div>
+						</div>
+
+
+						<div class="sl-block" data-block-type="shape" data-block-id="c2b1692aa31beff98435ce077b34f04f" style="min-width: 4px; min-height: 4px; width: 80px; height: 80px; left: 400px; top: 558px;">
+							<div class="sl-block-content fragment" data-shape-type="symbol-sad" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 15;" data-fragment-index="6">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 32 32">
+									<g class="shape-element" fill="rgb(255, 0, 0)">
+										<path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM8 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM20 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM9.997 24.398l-2.573-1.544c1.749-2.908 4.935-4.855 8.576-4.855 3.641 0 6.827 1.946 8.576 4.855l-2.573 1.544c-1.224-2.036-3.454-3.398-6.003-3.398-2.549 0-4.779 1.362-6.003 3.398z"></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+
+						<div class="sl-block" data-block-type="shape" data-block-id="8062f94e0fd04b7ade508012863f3f5f" style="min-width: 4px; min-height: 4px; width: 82px; height: 82px; left: 401px; top: 42px;">
+							<div class="sl-block-content fragment" data-shape-type="symbol-smiley" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="4">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 32 32">
+									<g class="shape-element" fill="rgb(0, 255, 0)">
+										<path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM8 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM20 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM22.003 19.602l2.573 1.544c-1.749 2.908-4.935 4.855-8.576 4.855s-6.827-1.946-8.576-4.855l2.573-1.544c1.224 2.036 3.454 3.398 6.003 3.398s4.779-1.362 6.003-3.398z"></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="87cf9907f43ba4b56dc8721eb33a0e35" style="min-width: 4px; min-height: 4px; width: 105px; height: 105px; left: 527px; top: 525px;">
+							<div class="sl-block-content fragment" data-shape-type="symbol-thin-arrow-up-right" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 18;" data-fragment-index="6">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="4 4 24 24">
+									<g class="shape-element" fill="rgb(238, 238, 238)">
+										<path d="M26.001 4c-0 0-0.001 0-0.001 0h-11.999c-1.105 0-2 0.895-2 2s0.895 2 2 2h7.172l-16.586 16.586c-0.781 0.781-0.781 2.047 0 2.828 0.391 0.391 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586l16.586-16.586v7.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-14h-1.999z"></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 101px; height: 101px; left: 200px; top: 109px;" data-block-id="34d22e29bcb95443714923441a91db02">
+							<div class="sl-block-content fragment" data-shape-type="symbol-thin-arrow-up-right" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 19;" data-fragment-index="3">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="4 4 24 24">
+									<g class="shape-element" fill="rgb(238, 238, 238)">
+										<path d="M26.001 4c-0 0-0.001 0-0.001 0h-11.999c-1.105 0-2 0.895-2 2s0.895 2 2 2h7.172l-16.586 16.586c-0.781 0.781-0.781 2.047 0 2.828 0.391 0.391 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586l16.586-16.586v7.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-14h-1.999z"></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" data-block-id="0dbe757d1b48d432d4e9e9902caf8f6a" style="height: auto; min-width: 30px; min-height: 30px; width: 194px; left: 346px; top: 147px;">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);" data-fragment-index="4">
+								<h2><span style="font-size:1.4em"><strong>מש''ן</strong></span></h2>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="e626a7bf2fbeced331a89280692177e9" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 421px; top: 133px;">
+							<div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 21;" data-fragment-index="4">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41">
+									<polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 422px; top: 239px;" data-block-id="6892ccf1fdcf3aa5575640586030ebd3">
+							<div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 22;" data-fragment-index="5">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41">
+									<polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 420px; top: 387px;" data-block-id="8d60cf1b7059574132a5747a6adca737">
+							<div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 23;" data-fragment-index="5">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41">
+									<polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 294px; left: 293px; top: 408px;" data-block-id="889855ce902baf68a8e5dd7c6ff23e29">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(255, 255, 255);" data-fragment-index="5">
+								<h2><span style="font-size:1.4em"><strong>שלישות</strong></span></h2>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 420px; top: 504px;" data-block-id="c5adb2f7fc30e2102f708c5f3744aae8">
+							<div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 25;" data-fragment-index="6">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41">
+									<polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon>
+								</svg>
+							</div>
+						</div>
+					</section>
+					<section class="future" style="display: block;" hidden="" aria-hidden="true">
+						<div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="a096115501566418313f96ef058bbb90">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+								<h2>רשימה</h2>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="width: 241.295px; height: 475px; left: 132px; top: 148px;" data-block-id="55196698f0d9b2e90309ba4b9adee2bb">
+							<div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1208" data-natural-height="2378" style="" src="./images/android.gif"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="width: 241.295px; height: 475px; left: 600px; top: 144px;" data-block-id="531d9f73a89e83913798b3c342535714">
+							<div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1208" data-natural-height="2378" style="" src="./images/android.gif"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="1aaf702bf7c3479dc202421dedaecdab" style="min-width: 4px; min-height: 4px; width: 218px; height: 390px; left: 144px; top: 187px;">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 16;" data-fragment-index="0">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 218 390">
+									<rect width="218" height="390" class="shape-element" fill="rgb(170, 170, 170)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="a8a7d9d69182e0663bf7f1e293890b12" style="min-width: 30px; min-height: 30px; width: 219.267px; height: 390px; left: 611px; top: 180px;">
+							<div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="506" data-natural-height="900" src="./images/display.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="0a36e3a0ee9eaa5030b61a4dfbe081ad" style="min-width: 30px; min-height: 30px; width: 106px; height: 106px; left: 200px; top: 218px;">
+							<div class="sl-block-content fragment" style="z-index: 24;" data-fragment-index="0"><img data-natural-width="500" data-natural-height="500" style="" src="./images/face.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="691aa95d7be541a0d93eef7a5678fd4a" style="min-width: 30px; min-height: 30px; width: 62px; height: 62px; left: 284px; top: 324px;">
+							<div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="0"><img style="" data-natural-width="128" data-natural-height="128" src="./images/pencil.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="e4e03559737087267a358d1b43d28934" style="min-width: 4px; min-height: 4px; width: 175px; height: 111px; left: 166px; top: 332px;">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 18;" data-fragment-index="0">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 175 111">
+									<rect width="175" height="111" class="shape-element" fill="rgb(238, 238, 238)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 175px; height: 38.5px; left: 166px; top: 514px;" data-block-id="b1d3f2bda9891d8aad26ae2138e60f40">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(221, 126, 107)" data-shape-stretch="true" style="z-index: 21;" data-fragment-index="1">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 175 39">
+									<rect width="175" height="39" class="shape-element" fill="rgb(221, 126, 107)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" data-block-id="e1deac8766dbd6285b143c3eb79bae95" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 201px; top: 343px;">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;" data-fragment-index="1">
+								<p>ויקטור</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 200px; top: 508px;" data-block-id="8cbbbd1e0fbcf022ea9b1bbdb97ac493">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(238, 238, 238);" data-fragment-index="1">
+								<p>חיפוס</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="bb183fa5088cfdbec22cd9294eb2d078" style="min-width: 30px; min-height: 30px; width: 70px; height: 70px; left: 280px; top: 493px;">
+							<div class="sl-block-content fragment" style="z-index: 23;" data-fragment-index="1"><img style="" data-natural-width="512" data-natural-height="512" src="./images/search.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="1f4b13cc16f0fcb2cdfc96a0243e4ce8" style="min-width: 30px; min-height: 30px; width: 219px; height: 72.3634px; left: 611px; top: 180px;">
+							<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="3"><img style="" data-natural-width="1032" data-natural-height="341" src="./images/notif.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 106px; height: 106px; left: 427px; top: 332px;" data-block-id="ae2add20b3f70c02e5e6da4a8e867729">
+							<div class="sl-block-content fragment" data-shape-type="arrow-right" data-shape-fill-color="rgb(34, 34, 34)" data-shape-stretch="true" style="z-index: 15;" data-fragment-index="2">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 106 106">
+									<polygon points="0,31.799999999999997 53,31.799999999999997 53,0 106,53 53,106 53,74.19999999999999 0,74.19999999999999" class="shape-element" fill="rgb(34, 34, 34)"></polygon>
+								</svg>
+							</div>
+						</div>
+					</section>
+					<section class="future" style="display: none;" hidden="" aria-hidden="true">
+						<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 22px; height: auto;" data-block-id="e7e3f48b6327a42379d9cc2e38828eef">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+								<h1>חיבור</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="width: 160px; height: 160px; left: 163px; top: 147px;" data-block-id="cecd4cbee9452cfa99e13f0648891169">
+							<div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="500" data-natural-height="500" src="./images/face.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="974b71658594d9e44dd6632d1bcbf661" style="min-width: 4px; min-height: 4px; width: 320px; height: 488px; left: 82px; top: 142px;">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 11;" data-fragment-index="0">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 320 488">
+									<rect width="320" height="488" class="shape-element" fill="rgb(170, 170, 170)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="e4919ffd21b89fb594083c6e3cb25bbc" style="min-width: 4px; min-height: 4px; width: 237px; height: 41px; left: 123px; top: 321px;">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;" data-fragment-index="0">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 237 41">
+									<rect width="237" height="41" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 237px; height: 41px; left: 123px; top: 377px;" data-block-id="d6974a2c8126c54af001c1547a2a39f1">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;" data-fragment-index="0">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 237 41">
+									<rect width="237" height="41" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="0592bcc6e0366fe21419449d3121f1cc" style="min-width: 30px; min-height: 30px; width: 57.5646px; height: 78px; left: 289px; top: 490px;">
+							<div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0"><img data-natural-width="200" data-natural-height="271" style="" src="./images/hativa.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="311b44c7659b650851bff323e4d63472" style="min-width: 30px; min-height: 30px; width: 86.9697px; height: 41px; left: 274px; top: 440px;">
+							<div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="0"><img data-natural-width="140" data-natural-height="66" style="" src="./images/darga.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342.485px; height: 155px; left: 560px; top: 140px;" data-block-id="01705ed8e2efa71c152cfe04f2d7665d">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="1">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155">
+									<rect width="342" height="155" class="shape-element" fill="rgb(170, 170, 170)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" data-block-id="28d709a7398d7459e96e8b9f6771569b" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 187px; top: 322px;">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;" data-fragment-index="0">
+								<p>ויקטור</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 142px; left: 172px; top: 378px;" data-block-id="9cdede76bc82a8ca0c5a225385b1fd25">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;" dir="ui" data-fragment-index="0">
+								<p>83213233</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" data-block-id="1ec8610c66605f191d3dbde73892f045" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 148px; top: 466px;">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(34, 34, 34);" data-fragment-index="0">
+
+								<br>
+								<p>תוער</p>
+
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="dd27c7efe364ecce5b8b926ab2e8f0d4" style="min-width: 30px; min-height: 30px; width: 175.43px; height: 175px; left: 123px; top: 440px;">
+							<div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="0"><img style="" data-natural-width="816" data-natural-height="814" src="./images/toar.png"></div>
+						</div>
+
+						<div class="sl-block" data-block-type="image" data-block-id="faa734a27564ff018c3aed7cf78df153" style="min-width: 30px; min-height: 30px; width: 119px; height: 118.336px; left: 578px; top: 159px;">
+							<div class="sl-block-content fragment" style="z-index: 22;" data-fragment-index="1"><img style="" data-natural-width="896" data-natural-height="891" src="./images/modiin.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 205px;" data-block-id="1d248aa161a63c94f4f61d4a24fd4e13">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 23;" data-fragment-index="1">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 158px;" data-block-id="2ec61d4ac943b3b52709ee518519fd15">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 24;" data-fragment-index="1">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342.485px; height: 155px; left: 560px; top: 476px;" data-block-id="89edb9bf0e3943b4b1a343d612f0d549">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 25;" data-fragment-index="3">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155">
+									<rect width="342" height="155" class="shape-element" fill="rgb(170, 170, 170)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 583px;" data-block-id="e869e1254e40b3588258d58c1d6559be">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 26;" data-fragment-index="3">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 116.458px; height: 118px; left: 581px; top: 494px;" data-block-id="aa3db92cdfe0d48bdcaf1cc0e351d21f">
+							<div class="sl-block-content fragment" style="z-index: 27;" data-fragment-index="3"><img style="" data-natural-width="453" data-natural-height="459" src="./images/tikshuv.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 540px;" data-block-id="688a885be73ed479a2a99ef002864bfd">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 28;" data-fragment-index="3">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 493px;" data-block-id="fcc7d0376deb0c9a75ed0433b212bf44">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 29;" data-fragment-index="3">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342.485px; height: 155px; left: 561px; top: 307px;" data-block-id="b02584353715f28b1c55c8f9db63dfa7">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 30;" data-fragment-index="2">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155">
+									<rect width="342" height="155" class="shape-element" fill="rgb(170, 170, 170)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 718px; top: 415px;" data-block-id="815d6ac657b0ccfe1a6c246d6e2dfd3b">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 31;" data-fragment-index="2">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 119px; height: 119px; left: 582px; top: 328px;" data-block-id="8c46a6c2a1bd2fc6512fa07a62092a3d">
+							<div class="sl-block-content fragment" style="z-index: 32;" data-fragment-index="2"><img style="" data-natural-width="900" data-natural-height="900" src="./images/mazi.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 718px; top: 369px;" data-block-id="b7e0787d9f4b04413ea03fdad40f5a74">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 33;" data-fragment-index="2">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 718px; top: 325px;" data-block-id="5a061bd2e35372d28691158ea0758706">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 34;" data-fragment-index="2">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" data-block-id="16c4febf07f81caee395617553514469" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 754px; top: 489px;">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 35;" data-fragment-index="3">
+								<p>מ''ק</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 727px; top: 323px;" data-block-id="6bc237be528ba0a45a28be9478fdbf8c">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 36;" dir="ui" data-fragment-index="2">
+								<p>תקציבים</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 750px; top: 155px;" data-block-id="e1261fc92018adb6ea72a5e7bf61515d">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37;" dir="ui" data-fragment-index="1">
+								<p>מסווג</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 750px; top: 202px;" data-block-id="09f4ea98ced3b7419473e707c4f2269c">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 38;" dir="ui" data-fragment-index="1">
+								<p>8200</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 752px; top: 250px;" data-block-id="da6733cae46cb23905e12d2b533206c3">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 47;" dir="ui" data-fragment-index="1">
+								<p>5000$</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 752px; top: 580px;" data-block-id="81a9770ac30e7d1b5aa31853006fd846">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 39;" dir="ui" data-fragment-index="3">
+								<p>10$</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 754px; top: 537px;" data-block-id="fb537582d5c2c0ad9d34084d85ad5ae8">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 40;" dir="ui" data-fragment-index="3">
+								<p>מת''מ</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 727px; top: 362px;" data-block-id="08bbccd2b13e11c1c57da0bf97d77074">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41;" dir="ui" data-fragment-index="2">
+								<p>חת''ל</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 726px; top: 412px;" data-block-id="073b69ee3e69756d7c3dd8b66a74f0b0">
+							<div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 42;" dir="ui" data-fragment-index="2">
+								<p>350$</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="291f853e7d2b21b0972235992c08c45a" style="min-width: 4px; min-height: 4px; width: 106px; height: 106px; left: 427px; top: 332px;">
+							<div class="sl-block-content fragment" data-shape-type="arrow-right" data-shape-fill-color="rgb(34, 34, 34)" data-shape-stretch="true" style="z-index: 43;" data-fragment-index="4">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 106 106">
+									<polygon points="0,31.799999999999997 53,31.799999999999997 53,0 106,53 53,106 53,74.19999999999999 0,74.19999999999999" class="shape-element" fill="rgb(34, 34, 34)"></polygon>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" data-block-id="88e07a2398760939ef62ba0378eaa6a3" style="min-width: 4px; min-height: 4px; width: 342px; height: 155px; left: 560px; top: 140px;">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 48; opacity: 0.6;" data-fragment-index="5">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155">
+									<rect width="342" height="155" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342px; height: 155px; left: 560px; top: 476px;" data-block-id="2c46561a3c7f8870af19da7431b9c782">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 44; opacity: 0.6;" data-fragment-index="5">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155">
+									<rect width="342" height="155" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 720px; top: 253px;" data-block-id="e265036c888fc761c0bcd6ed6ad88e28">
+							<div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 45;" data-fragment-index="1">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32">
+									<rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect>
+								</svg>
+							</div>
+						</div>
+					</section>
+					<section class="future" style="display: none;" hidden="" aria-hidden="true">
+						<div class="sl-block" data-block-type="image" style="width: 700px; height: 700px; left: 129px; top: 39px;" data-block-id="07525730ef37dfdb2e88cad3bea986ad">
+							<div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="500" data-natural-height="500" src="./images/name.png"></div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="16a7cefc1eb10bd0e900636be8efd9a5" style="min-width: 30px; min-height: 30px; width: 71px; height: 71px; left: 517px; top: 531px;">
+							<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img data-natural-width="500" data-natural-height="500" style="" src="./images/blink.png"></div>
+						</div>
+						<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+							<!-- Begin MailChimp Signup Form -->
+							<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+							<style type="text/css">
+								#mc_embed_signup {
+									clear: left;
+									font: 14px Helvetica, Arial, sans-serif;
+									width: 100%;
+								}
+							</style>
+							<div id="mc_embed_signup">
+								<form action="//herokuapp.us12.list-manage.com/subscribe/post?u=194feccdae03ee70ccb65ebd1&amp;id=79a3c8bce0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<div id="mc_embed_signup_scroll">
+										<label for="mce-EMAIL">Welcome to join our launch!</label>
+										<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+										<div style="position: absolute; left: -5000px;" aria-hidden="true">
+											<input type="text" name="b_194feccdae03ee70ccb65ebd1_79a3c8bce0" tabindex="-1" value="">
+										</div>
+										<div class="clear">
+											<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<!--End mc_embed_signup-->
+						</div>
+					</section>
+				</section>
+			</div>
+			<div class="dimmer"></div>
+			<div class="backgrounds">
+				<div class="slide-background stack present" data-loaded="true" style="display: block;">
+					<div class="slide-background present" data-loaded="true" style="display: block;"></div>
+					<div class="slide-background has-light-background future" data-background-hash="0#8e7cc3nullnullnull" style="display: block; background-color: rgb(142, 124, 195);" data-loaded="true"></div>
+					<div class="slide-background future" data-loaded="true" style="display: block;"></div>
+					<div class="slide-background future" data-loaded="true" style="display: none;"></div>
+					<div class="slide-background future" style="display: none;" data-loaded="true"></div>
+				</div>
+			</div>
+			<div class="progress" style="display: block;"><span style="width: 0px;"></span></div>
+			<aside class="controls" style="display: block;">
+				<div class="navigate-left"></div>
+				<div class="navigate-right"></div>
+				<div class="navigate-up"></div>
+				<div class="navigate-down enabled"></div>
+			</aside>
+			<div class="slide-number" style="display: block;"><span class="slide-number-a">1</span><span class="slide-number-delimiter">.</span><span class="slide-number-b">1</span></div>
+			<div class="speaker-notes" data-prevent-swipe=""></div>
+			<div class="pause-overlay"></div>
+			<div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+
+
 			</div>
 		</div>
-
-		<div class="reveal-viewport theme-font-montserrat theme-color-sky-blue">
-			<div class="reveal concave" role="application" data-transition-speed="default" data-background-transition="zoom">
-				<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.901143);">
-					<section class="stack present" style="display: block;" data-previous-indexv="0"><section class="present" style="display: block;">
+	</div>
 
 
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 439.919px; height: 866px; left: 260px; top: 70px;" data-block-id="8c1953fb8afa4cf195595bccd2788f9e"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1208" data-natural-height="2378" src="./images/android.gif"></div></div></section><section class="has-light-background future" data-background-color="#8e7cc3" style="display: block;" hidden="" aria-hidden="true">
+	<script>
+		var SLConfig = {
+			"current_user": {
+				"id": 443116,
+				"username": "wmobilas",
+				"name": null,
+				"description": null,
+				"thumbnail_url": "https://www.gravatar.com/avatar/386dbc60225957b181293e4e05de6443?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png",
+				"pro": false,
+				"enterprise": false,
+				"enterprise_manager": false,
+				"settings": {
+					"id": 283216,
+					"present_controls": true,
+					"present_upsizing": true,
+					"present_notes": true,
+					"editor_grid": false,
+					"editor_snap": true,
+					"developer_mode": false
+				},
+				"registered": true,
+				"email": "wmobilas@gmail.com",
+				"notify_on_receipt": true,
+				"billing_address": null,
+				"editor_tutorial_completed": true,
+				"manually_upgraded": false
+			},
+			"deck": {
+				"id": 597021,
+				"slug": "slides",
+				"title": "slides",
+				"description": "",
+				"visibility": "all",
+				"published_at": "2016-01-29T12:37:20.624Z",
+				"sanitize_messages": null,
+				"thumbnail_url": "https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/ece988/decks.jpg",
+				"view_count": 10,
+				"user": {
+					"id": 443116,
+					"username": "wmobilas",
+					"name": null,
+					"description": null,
+					"thumbnail_url": "https://www.gravatar.com/avatar/386dbc60225957b181293e4e05de6443?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png",
+					"pro": false,
+					"enterprise": false,
+					"enterprise_manager": false,
+					"settings": {
+						"id": 283216,
+						"present_controls": true,
+						"present_upsizing": true,
+						"present_notes": true
+					},
+					"registered": true
+				},
+				"background_transition": "zoom",
+				"transition": "concave",
+				"theme_id": null,
+				"theme_font": "montserrat",
+				"theme_color": "sky-blue",
+				"auto_slide_interval": 0,
+				"comments_enabled": true,
+				"forking_enabled": true,
+				"rolling_links": false,
+				"center": false,
+				"should_loop": false,
+				"share_notes": false,
+				"slide_number": true,
+				"rtl": false,
+				"version": 2,
+				"access_token": "ZhkZKZPeNi9uGwyq6AHipHUhpdAr",
+				"notes": {}
+			}
+		};
+	</script>
+	<script defer="defer" src="./js/application-5311caba6150b33c495c623c8e7f4f84.js"></script>
+	<script defer="defer" src="./js/reveal.min-25b719b3b898da619ea3b535ce4f4dbd.js"></script>
 
 
 
-<div class="sl-block" data-block-type="image" data-block-id="9468fd78c9891bf51d2c17dcb54d0fbe" style="min-width: 30px; min-height: 30px; width: 371px; height: 393.286px; left: 0px; top: 237px;"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img data-natural-width="849" data-natural-height="900" style="" src="./images/soldier.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="be677cb82d5fb59a99f78dc3ab8ce2e1" style="min-width: 30px; min-height: 30px; width: 129px; height: 129px; left: 0px; top: 173px;"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="1"><img style="" data-natural-width="512" data-natural-height="512" src="./images/bubbleright.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="63c06a0b33391d5d361c4ee871100ae0" style="min-width: 30px; min-height: 30px; width: 400.143px; height: 424px; left: 560px; top: 206px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0"><img data-natural-width="1107" data-natural-height="1173" style="" src="./images/officer.gif"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="adbd583958ba5d3d9147a3ce2cf37146" style="min-width: 30px; min-height: 30px; width: 123px; height: 123px; left: 757px; top: 173px;"><div class="sl-block-content fragment" style="z-index: 0;" data-fragment-index="2"><img data-natural-width="512" data-natural-height="512" style="" src="./images/bubbleleft.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="f9798dd70612a2e21516428299ff24c4" style="min-width: 30px; min-height: 30px; width: 90px; height: 90px; left: 396px; top: 287px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="5"><img style="" data-natural-width="900" data-natural-height="900" src="./images/gear.png"></div></div>
 
-
-<div class="sl-block" data-block-type="shape" data-block-id="c2b1692aa31beff98435ce077b34f04f" style="min-width: 4px; min-height: 4px; width: 80px; height: 80px; left: 400px; top: 558px;"><div class="sl-block-content fragment" data-shape-type="symbol-sad" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 15;" data-fragment-index="6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 32 32"><g class="shape-element" fill="rgb(255, 0, 0)"><path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM8 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM20 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM9.997 24.398l-2.573-1.544c1.749-2.908 4.935-4.855 8.576-4.855 3.641 0 6.827 1.946 8.576 4.855l-2.573 1.544c-1.224-2.036-3.454-3.398-6.003-3.398-2.549 0-4.779 1.362-6.003 3.398z"></path></g></svg></div></div>
-
-<div class="sl-block" data-block-type="shape" data-block-id="8062f94e0fd04b7ade508012863f3f5f" style="min-width: 4px; min-height: 4px; width: 82px; height: 82px; left: 401px; top: 42px;"><div class="sl-block-content fragment" data-shape-type="symbol-smiley" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 32 32"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM8 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM20 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM22.003 19.602l2.573 1.544c-1.749 2.908-4.935 4.855-8.576 4.855s-6.827-1.946-8.576-4.855l2.573-1.544c1.224 2.036 3.454 3.398 6.003 3.398s4.779-1.362 6.003-3.398z"></path></g></svg></div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="87cf9907f43ba4b56dc8721eb33a0e35" style="min-width: 4px; min-height: 4px; width: 105px; height: 105px; left: 527px; top: 525px;"><div class="sl-block-content fragment" data-shape-type="symbol-thin-arrow-up-right" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 18;" data-fragment-index="6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="4 4 24 24"><g class="shape-element" fill="rgb(238, 238, 238)"><path d="M26.001 4c-0 0-0.001 0-0.001 0h-11.999c-1.105 0-2 0.895-2 2s0.895 2 2 2h7.172l-16.586 16.586c-0.781 0.781-0.781 2.047 0 2.828 0.391 0.391 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586l16.586-16.586v7.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-14h-1.999z"></path></g></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 101px; height: 101px; left: 200px; top: 109px;" data-block-id="34d22e29bcb95443714923441a91db02"><div class="sl-block-content fragment" data-shape-type="symbol-thin-arrow-up-right" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 19;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="4 4 24 24"><g class="shape-element" fill="rgb(238, 238, 238)"><path d="M26.001 4c-0 0-0.001 0-0.001 0h-11.999c-1.105 0-2 0.895-2 2s0.895 2 2 2h7.172l-16.586 16.586c-0.781 0.781-0.781 2.047 0 2.828 0.391 0.391 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586l16.586-16.586v7.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-14h-1.999z"></path></g></svg></div></div>
-<div class="sl-block" data-block-type="text" data-block-id="0dbe757d1b48d432d4e9e9902caf8f6a" style="height: auto; min-width: 30px; min-height: 30px; width: 194px; left: 346px; top: 147px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);" data-fragment-index="4">
-<h2><span style="font-size:1.4em"><strong>מש''ן</strong></span></h2>
-</div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="e626a7bf2fbeced331a89280692177e9" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 421px; top: 133px;"><div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 21;" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41"><polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 422px; top: 239px;" data-block-id="6892ccf1fdcf3aa5575640586030ebd3"><div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 22;" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41"><polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 420px; top: 387px;" data-block-id="8d60cf1b7059574132a5747a6adca737"><div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 23;" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41"><polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon></svg></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 294px; left: 293px; top: 408px;" data-block-id="889855ce902baf68a8e5dd7c6ff23e29"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(255, 255, 255);" data-fragment-index="5">
-<h2><span style="font-size:1.4em"><strong>שלישות</strong></span></h2>
-</div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 41px; height: 41px; left: 420px; top: 504px;" data-block-id="c5adb2f7fc30e2102f708c5f3744aae8"><div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 25;" data-fragment-index="6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 41 41"><polygon points="20.5,41 41,20.5 28.7,20.5 28.7,0 12.299999999999999,0 12.299999999999999,20.5 0,20.5 20.5,41" class="shape-element" fill="rgb(238, 238, 238)"></polygon></svg></div></div></section><section class="future" style="display: block;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="a096115501566418313f96ef058bbb90"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
-<h2>רשימה</h2>
-</div></div>
-<div class="sl-block" data-block-type="image" style="width: 241.295px; height: 475px; left: 132px; top: 148px;" data-block-id="55196698f0d9b2e90309ba4b9adee2bb"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1208" data-natural-height="2378" style="" src="./images/android.gif"></div></div>
-<div class="sl-block" data-block-type="image" style="width: 241.295px; height: 475px; left: 600px; top: 144px;" data-block-id="531d9f73a89e83913798b3c342535714"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1208" data-natural-height="2378" style="" src="./images/android.gif"></div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="1aaf702bf7c3479dc202421dedaecdab" style="min-width: 4px; min-height: 4px; width: 218px; height: 390px; left: 144px; top: 187px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 16;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 218 390"><rect width="218" height="390" class="shape-element" fill="rgb(170, 170, 170)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="a8a7d9d69182e0663bf7f1e293890b12" style="min-width: 30px; min-height: 30px; width: 219.267px; height: 390px; left: 611px; top: 180px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="506" data-natural-height="900" src="./images/display.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="0a36e3a0ee9eaa5030b61a4dfbe081ad" style="min-width: 30px; min-height: 30px; width: 106px; height: 106px; left: 200px; top: 218px;"><div class="sl-block-content fragment" style="z-index: 24;" data-fragment-index="0"><img data-natural-width="500" data-natural-height="500" style="" src="./images/face.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="691aa95d7be541a0d93eef7a5678fd4a" style="min-width: 30px; min-height: 30px; width: 62px; height: 62px; left: 284px; top: 324px;"><div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="0"><img style="" data-natural-width="128" data-natural-height="128" src="./images/pencil.png"></div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="e4e03559737087267a358d1b43d28934" style="min-width: 4px; min-height: 4px; width: 175px; height: 111px; left: 166px; top: 332px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 18;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 175 111"><rect width="175" height="111" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 175px; height: 38.5px; left: 166px; top: 514px;" data-block-id="b1d3f2bda9891d8aad26ae2138e60f40"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(221, 126, 107)" data-shape-stretch="true" style="z-index: 21;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 175 39"><rect width="175" height="39" class="shape-element" fill="rgb(221, 126, 107)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="text" data-block-id="e1deac8766dbd6285b143c3eb79bae95" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 201px; top: 343px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;" data-fragment-index="1">
-<p>ויקטור</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 200px; top: 508px;" data-block-id="8cbbbd1e0fbcf022ea9b1bbdb97ac493"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(238, 238, 238);" data-fragment-index="1">
-<p>חיפוס</p>
-</div></div>
-<div class="sl-block" data-block-type="image" data-block-id="bb183fa5088cfdbec22cd9294eb2d078" style="min-width: 30px; min-height: 30px; width: 70px; height: 70px; left: 280px; top: 493px;"><div class="sl-block-content fragment" style="z-index: 23;" data-fragment-index="1"><img style="" data-natural-width="512" data-natural-height="512" src="./images/search.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="1f4b13cc16f0fcb2cdfc96a0243e4ce8" style="min-width: 30px; min-height: 30px; width: 219px; height: 72.3634px; left: 611px; top: 180px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="3"><img style="" data-natural-width="1032" data-natural-height="341" src="./images/notif.png"></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 106px; height: 106px; left: 427px; top: 332px;" data-block-id="ae2add20b3f70c02e5e6da4a8e867729"><div class="sl-block-content fragment" data-shape-type="arrow-right" data-shape-fill-color="rgb(34, 34, 34)" data-shape-stretch="true" style="z-index: 15;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 106 106"><polygon points="0,31.799999999999997 53,31.799999999999997 53,0 106,53 53,106 53,74.19999999999999 0,74.19999999999999" class="shape-element" fill="rgb(34, 34, 34)"></polygon></svg></div></div></section><section class="future" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 22px; height: auto;" data-block-id="e7e3f48b6327a42379d9cc2e38828eef"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
-<h1>חיבור</h1>
-</div></div>
-<div class="sl-block" data-block-type="image" style="width: 160px; height: 160px; left: 163px; top: 147px;" data-block-id="cecd4cbee9452cfa99e13f0648891169"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="500" data-natural-height="500" src="./images/face.png"></div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="974b71658594d9e44dd6632d1bcbf661" style="min-width: 4px; min-height: 4px; width: 320px; height: 488px; left: 82px; top: 142px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 11;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 320 488"><rect width="320" height="488" class="shape-element" fill="rgb(170, 170, 170)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="e4919ffd21b89fb594083c6e3cb25bbc" style="min-width: 4px; min-height: 4px; width: 237px; height: 41px; left: 123px; top: 321px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 237 41"><rect width="237" height="41" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 237px; height: 41px; left: 123px; top: 377px;" data-block-id="d6974a2c8126c54af001c1547a2a39f1"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 237 41"><rect width="237" height="41" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="0592bcc6e0366fe21419449d3121f1cc" style="min-width: 30px; min-height: 30px; width: 57.5646px; height: 78px; left: 289px; top: 490px;"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0"><img data-natural-width="200" data-natural-height="271" style="" src="./images/hativa.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="311b44c7659b650851bff323e4d63472" style="min-width: 30px; min-height: 30px; width: 86.9697px; height: 41px; left: 274px; top: 440px;"><div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="0"><img data-natural-width="140" data-natural-height="66" style="" src="./images/darga.png"></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342.485px; height: 155px; left: 560px; top: 140px;" data-block-id="01705ed8e2efa71c152cfe04f2d7665d"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155"><rect width="342" height="155" class="shape-element" fill="rgb(170, 170, 170)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="text" data-block-id="28d709a7398d7459e96e8b9f6771569b" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 187px; top: 322px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;" data-fragment-index="0">
-<p>ויקטור</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 142px; left: 172px; top: 378px;" data-block-id="9cdede76bc82a8ca0c5a225385b1fd25"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;" dir="ui" data-fragment-index="0">
-<p>83213233</p>
-</div></div>
-<div class="sl-block" data-block-type="text" data-block-id="1ec8610c66605f191d3dbde73892f045" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 148px; top: 466px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(34, 34, 34);" data-fragment-index="0">
-
-	<br><p>תוער</p>
-
-</div></div>
-<div class="sl-block" data-block-type="image" data-block-id="dd27c7efe364ecce5b8b926ab2e8f0d4" style="min-width: 30px; min-height: 30px; width: 175.43px; height: 175px; left: 123px; top: 440px;"><div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="0"><img style="" data-natural-width="816" data-natural-height="814" src="./images/toar.png"></div></div>
-
-<div class="sl-block" data-block-type="image" data-block-id="faa734a27564ff018c3aed7cf78df153" style="min-width: 30px; min-height: 30px; width: 119px; height: 118.336px; left: 578px; top: 159px;"><div class="sl-block-content fragment" style="z-index: 22;" data-fragment-index="1"><img style="" data-natural-width="896" data-natural-height="891" src="./images/modiin.png"></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 205px;" data-block-id="1d248aa161a63c94f4f61d4a24fd4e13"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 23;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 158px;" data-block-id="2ec61d4ac943b3b52709ee518519fd15"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 24;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342.485px; height: 155px; left: 560px; top: 476px;" data-block-id="89edb9bf0e3943b4b1a343d612f0d549"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 25;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155"><rect width="342" height="155" class="shape-element" fill="rgb(170, 170, 170)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 583px;" data-block-id="e869e1254e40b3588258d58c1d6559be"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 26;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 116.458px; height: 118px; left: 581px; top: 494px;" data-block-id="aa3db92cdfe0d48bdcaf1cc0e351d21f"><div class="sl-block-content fragment" style="z-index: 27;" data-fragment-index="3"><img style="" data-natural-width="453" data-natural-height="459" src="./images/tikshuv.png"></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 540px;" data-block-id="688a885be73ed479a2a99ef002864bfd"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 28;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 717px; top: 493px;" data-block-id="fcc7d0376deb0c9a75ed0433b212bf44"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 29;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342.485px; height: 155px; left: 561px; top: 307px;" data-block-id="b02584353715f28b1c55c8f9db63dfa7"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(170, 170, 170)" data-shape-stretch="true" style="z-index: 30;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155"><rect width="342" height="155" class="shape-element" fill="rgb(170, 170, 170)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 718px; top: 415px;" data-block-id="815d6ac657b0ccfe1a6c246d6e2dfd3b"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 31;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 119px; height: 119px; left: 582px; top: 328px;" data-block-id="8c46a6c2a1bd2fc6512fa07a62092a3d"><div class="sl-block-content fragment" style="z-index: 32;" data-fragment-index="2"><img style="" data-natural-width="900" data-natural-height="900" src="./images/mazi.png"></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 718px; top: 369px;" data-block-id="b7e0787d9f4b04413ea03fdad40f5a74"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 33;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 718px; top: 325px;" data-block-id="5a061bd2e35372d28691158ea0758706"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 34;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="text" data-block-id="16c4febf07f81caee395617553514469" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 754px; top: 489px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 35;" data-fragment-index="3">
-<p>מ''ק</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 727px; top: 323px;" data-block-id="6bc237be528ba0a45a28be9478fdbf8c"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 36;" dir="ui" data-fragment-index="2">
-<p>תקציבים</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 750px; top: 155px;" data-block-id="e1261fc92018adb6ea72a5e7bf61515d"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37;" dir="ui" data-fragment-index="1">
-<p>מסווג</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 750px; top: 202px;" data-block-id="09f4ea98ced3b7419473e707c4f2269c"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 38;" dir="ui" data-fragment-index="1">
-<p>8200</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 752px; top: 250px;" data-block-id="da6733cae46cb23905e12d2b533206c3"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 47;" dir="ui" data-fragment-index="1">
-<p>5000$</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 752px; top: 580px;" data-block-id="81a9770ac30e7d1b5aa31853006fd846"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 39;" dir="ui" data-fragment-index="3">
-<p>10$</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 754px; top: 537px;" data-block-id="fb537582d5c2c0ad9d34084d85ad5ae8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 40;" dir="ui" data-fragment-index="3">
-<p>מת''מ</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 727px; top: 362px;" data-block-id="08bbccd2b13e11c1c57da0bf97d77074"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41;" dir="ui" data-fragment-index="2">
-<p>חת''ל</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 726px; top: 412px;" data-block-id="073b69ee3e69756d7c3dd8b66a74f0b0"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 42;" dir="ui" data-fragment-index="2">
-<p>350$</p>
-</div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="291f853e7d2b21b0972235992c08c45a" style="min-width: 4px; min-height: 4px; width: 106px; height: 106px; left: 427px; top: 332px;"><div class="sl-block-content fragment" data-shape-type="arrow-right" data-shape-fill-color="rgb(34, 34, 34)" data-shape-stretch="true" style="z-index: 43;" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 106 106"><polygon points="0,31.799999999999997 53,31.799999999999997 53,0 106,53 53,106 53,74.19999999999999 0,74.19999999999999" class="shape-element" fill="rgb(34, 34, 34)"></polygon></svg></div></div>
-<div class="sl-block" data-block-type="shape" data-block-id="88e07a2398760939ef62ba0378eaa6a3" style="min-width: 4px; min-height: 4px; width: 342px; height: 155px; left: 560px; top: 140px;"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 48; opacity: 0.6;" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155"><rect width="342" height="155" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 342px; height: 155px; left: 560px; top: 476px;" data-block-id="2c46561a3c7f8870af19da7431b9c782"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 44; opacity: 0.6;" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 342 155"><rect width="342" height="155" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
-<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 174.222px; height: 32px; left: 720px; top: 253px;" data-block-id="e265036c888fc761c0bcd6ed6ad88e28"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 45;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 174 32"><rect width="174" height="32" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section class="future" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="c274da28cc0b02eabcc299b548e26a6b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="//herokuapp.us12.list-manage.com/subscribe/post?u=194feccdae03ee70ccb65ebd1&amp;id=79a3c8bce0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Welcome to join our launch!</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_194feccdae03ee70ccb65ebd1_79a3c8bce0" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-</div></div>
-<div class="sl-block" data-block-type="image" style="width: 700px; height: 700px; left: 129px; top: 39px;" data-block-id="07525730ef37dfdb2e88cad3bea986ad"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="500" data-natural-height="500" src="./images/name.png"></div></div>
-<div class="sl-block" data-block-type="image" data-block-id="16a7cefc1eb10bd0e900636be8efd9a5" style="min-width: 30px; min-height: 30px; width: 71px; height: 71px; left: 517px; top: 531px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img data-natural-width="500" data-natural-height="500" style="" src="./images/blink.png"></div></div></section></section>
+	<aside class="presentation-controls">
+		<div class="presentation-controls-content" style="height: 543px;">
+			<h2>Presentation Controls</h2>
+			<div class="presentation-controls-section">
+				<h2>Speaker View</h2>
+				<p>The control panel for your presentation. Includes speaker notes, an upcoming slide preview and more. It can be used as a remote control when opened from a mobile device. <a href="http://help.slides.com/knowledgebase/articles/333923" target="_blank">Learn more.</a></p>
+				<a class="button l outline" href="http://slides.com/wmobilas/slides/speaker" target="_blank">Open speaker view</a>
+			</div>
+			<div class="presentation-controls-section">
+				<h2>Present Live</h2>
+				<p class="live-description">Share this link with your audience to have them follow along with the presentation in real-time. <a href="http://help.slides.com/knowledgebase/articles/333924" target="_blank">Learn more.</a></p>
+				<div class="live-share">
+					<input class="live-view-url input-field" type="text" value="http://slides.com/wmobilas/slides/live" readonly="">
 				</div>
-				<div class="dimmer"></div>
-			<div class="backgrounds"><div class="slide-background stack present" data-loaded="true" style="display: block;"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background has-light-background future" data-background-hash="0#8e7cc3nullnullnull" style="display: block; background-color: rgb(142, 124, 195);" data-loaded="true"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right"></div><div class="navigate-up"></div><div class="navigate-down enabled"></div></aside><div class="slide-number" style="display: block;"><span class="slide-number-a">1</span><span class="slide-number-delimiter">.</span><span class="slide-number-b">1</span></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
-
-
-</div></div>
+			</div>
+			<div class="presentation-controls-section sl-form">
+				<h2>Options</h2>
+				<div class="sl-checkbox outline fullscreen-toggle">
+					<input id="fullscreen-checkbox" type="checkbox">
+					<label for="fullscreen-checkbox">Fullscreen</label>
+				</div>
+				<div class="sl-checkbox outline controls-toggle" data-tooltip="Hide the presentation control arrows and progress bar." data-tooltip-alignment="r" data-tooltip-delay="500" data-tooltip-maxwidth="250">
+					<input id="controls-checkbox" type="checkbox">
+					<label for="controls-checkbox">Hide controls</label>
+				</div>
+				<div class="sl-checkbox outline notes-toggle" data-tooltip="Hide your speaker notes from the audience." data-tooltip-alignment="r" data-tooltip-delay="500" data-tooltip-maxwidth="250" style="display: none;">
+					<input id="controls-checkbox" type="checkbox">
+					<label for="controls-checkbox">Hide notes</label>
+				</div>
+				<div class="sl-checkbox outline upsizing-toggle" data-tooltip="Your content is automatically scaled up to fill as much of the browser window as possible. This option disables that scaling and favors the original authored at size." data-tooltip-alignment="r"
+						data-tooltip-delay="500" data-tooltip-maxwidth="300">
+					<input id="upsizing-checkbox" type="checkbox">
+					<label for="upsizing-checkbox">Disable upsizing</label>
+				</div>
+			</div>
 		</div>
+		<footer class="presentation-controls-footer">
+			<button class="button xl positive start-presentation">Start presentation</button>
+		</footer>
+		<div class="sl-scroll-shadow-top" style="height: 10px; opacity: 0; top: 0px;"></div>
+		<div class="sl-scroll-shadow-bottom" style="height: 10px; opacity: 1; bottom: 121px;"></div>
+	</aside>
+</body>
+<app id="XTranslate">
+	<icon class="showPopup fa-gear" style="display: none;"></icon>
+</app>
 
-
-<script>
-	var SLConfig = {"current_user":{"id":443116,"username":"wmobilas","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/386dbc60225957b181293e4e05de6443?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","pro":false,"enterprise":false,"enterprise_manager":false,"settings":{"id":283216,"present_controls":true,"present_upsizing":true,"present_notes":true,"editor_grid":false,"editor_snap":true,"developer_mode":false},"registered":true,"email":"wmobilas@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false},"deck":{"id":597021,"slug":"slides","title":"slides","description":"","visibility":"all","published_at":"2016-01-29T12:37:20.624Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/ece988/decks.jpg","view_count":10,"user":{"id":443116,"username":"wmobilas","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/386dbc60225957b181293e4e05de6443?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","pro":false,"enterprise":false,"enterprise_manager":false,"settings":{"id":283216,"present_controls":true,"present_upsizing":true,"present_notes":true},"registered":true},"background_transition":"zoom","transition":"concave","theme_id":null,"theme_font":"montserrat","theme_color":"sky-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":true,"rtl":false,"version":2,"access_token":"ZhkZKZPeNi9uGwyq6AHipHUhpdAr","notes":{}}};
-</script>
-		<script defer="defer" src="./js/application-5311caba6150b33c495c623c8e7f4f84.js"></script>
-		<script defer="defer" src="./js/reveal.min-25b719b3b898da619ea3b535ce4f4dbd.js"></script>
-
-
-
-
-<aside class="presentation-controls"><div class="presentation-controls-content" style="height: 543px;"><h2>Presentation Controls</h2><div class="presentation-controls-section"><h2>Speaker View</h2><p>The control panel for your presentation. Includes speaker notes, an upcoming slide preview and more. It can be used as a remote control when opened from a mobile device. <a href="http://help.slides.com/knowledgebase/articles/333923" target="_blank">Learn more.</a></p><a class="button l outline" href="http://slides.com/wmobilas/slides/speaker" target="_blank">Open speaker view</a></div><div class="presentation-controls-section"><h2>Present Live</h2><p class="live-description">Share this link with your audience to have them follow along with the presentation in real-time. <a href="http://help.slides.com/knowledgebase/articles/333924" target="_blank">Learn more.</a></p><div class="live-share"><input class="live-view-url input-field" type="text" value="http://slides.com/wmobilas/slides/live" readonly=""></div></div><div class="presentation-controls-section sl-form"><h2>Options</h2><div class="sl-checkbox outline fullscreen-toggle"><input id="fullscreen-checkbox" type="checkbox"><label for="fullscreen-checkbox">Fullscreen</label></div><div class="sl-checkbox outline controls-toggle" data-tooltip="Hide the presentation control arrows and progress bar." data-tooltip-alignment="r" data-tooltip-delay="500" data-tooltip-maxwidth="250"><input id="controls-checkbox" type="checkbox"><label for="controls-checkbox">Hide controls</label></div><div class="sl-checkbox outline notes-toggle" data-tooltip="Hide your speaker notes from the audience." data-tooltip-alignment="r" data-tooltip-delay="500" data-tooltip-maxwidth="250" style="display: none;"><input id="controls-checkbox" type="checkbox"><label for="controls-checkbox">Hide notes</label></div><div class="sl-checkbox outline upsizing-toggle" data-tooltip="Your content is automatically scaled up to fill as much of the browser window as possible. This option disables that scaling and favors the original authored at size." data-tooltip-alignment="r" data-tooltip-delay="500" data-tooltip-maxwidth="300"><input id="upsizing-checkbox" type="checkbox"><label for="upsizing-checkbox">Disable upsizing</label></div></div></div><footer class="presentation-controls-footer"><button class="button xl positive start-presentation">Start presentation</button></footer><div class="sl-scroll-shadow-top" style="height: 10px; opacity: 0; top: 0px;"></div><div class="sl-scroll-shadow-bottom" style="height: 10px; opacity: 1; bottom: 121px;"></div></aside></body><app id="XTranslate"><icon class="showPopup fa-gear" style="display: none;"></icon></app></html>
+</html>
