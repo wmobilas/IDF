@@ -9,17 +9,10 @@
 module.exports = {
 
   attributes: require('waterlock').models.jwt.attributes({
-    token: 'string',
-    uses: {
-      collection: 'use',
-      via: 'jsonWebToken'
-    },
-    owner: {
-      model: 'user'
-    },
-    revoked: {
-      type: 'boolean',
-      defaultsTo: false
-    }
+    
+    /* e.g.
+    nickname: 'string'
+    */
+    
   })
 };

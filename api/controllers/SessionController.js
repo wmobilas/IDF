@@ -6,9 +6,9 @@
  */
 var bcrypt = require('bcryptjs');
 module.exports = {
-  'new': function(req, res) {
-    res.view('session/new');
-  },
+  // 'new': function(req, res) {
+  //   res.view('session/new');
+  // },
 
   'create': function(req, res, next) {
     var params = req.params.all(),

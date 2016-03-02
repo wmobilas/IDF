@@ -7,51 +7,24 @@
  */
 
 module.exports = {
-  //  var User = Waterline.Collection.extend({
-  // types: {
-    //  point: function(latlng){
-    //   return latlng.x && latlng.y
-    //  },
 
-  //   password: function(password) {
-  //       return password === this.passwordConfirmation;
-  //     }
-  //     //);
-  // },
   attributes: require('waterlock').models.user.attributes({
 
-    /* e.g.
-    nickname: 'string'
-    */
-
-    username: {
-      type: "STRING",
-      //required: true,
-      // minLength: 5,
-      // maxLength: 20,
-      unique: true
+    firstName: {
+      type: "string"
+    },
+    lastName: {
+      type: "string"
     },
     confirmed: {
       type: "boolean",
       required: false,
       defaultsTo: false
-    },
-    salt: {
-      type: "STRING",
-      required: false
-    },
-    attempts: {
-      collection: 'attempt',
-      via: 'user'
-    },
-    jsonWebTokens: {
-      collection: 'jwt',
-      via: 'owner'
-    },
-    auth: {
-      model: 'auth'
     }
-
+    // ,
+    // salt: {
+    //   type: "string"
+    // }
   }),
 
   beforeCreate: require('waterlock').models.user.beforeCreate,

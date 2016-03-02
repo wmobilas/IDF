@@ -7,14 +7,15 @@
  */
 
 module.exports = {
-  
+
   attributes: require('waterlock').models.auth.attributes({
-
-    user: {
-      model: 'user'
-    }
+    
+    /* e.g.
+    nickname: 'string'
+    */
+    
   }),
-
+  
   beforeCreate: require('waterlock').models.auth.beforeCreate,
   beforeUpdate: require('waterlock').models.auth.beforeUpdate
 };

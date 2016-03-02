@@ -1,14 +1,4 @@
 module.exports = require('waterlock').actions.user({
-  'new': function(req, res) {
-    res.view();
-  },
-  reset: function(req, res) {
-    res.view();
-  },
-  password: function(req, res) {
-    res.view();
-  },
-  // route to create user, user auth and associate them
   register: function(req, res) {
     var params = req.params.all(),
       def = waterlock.Auth.definition,
@@ -19,7 +9,8 @@ module.exports = require('waterlock').actions.user({
         password: params.password
       },
       userObj = {
-        username: params.username,
+        firstName: params.firstName,
+        lastName: params.lastName,
         confirmed: params.confirmed
       };
 
@@ -141,7 +132,8 @@ module.exports = require('waterlock').actions.user({
   update: function(req, res, next) {
     var params = req.params.all(),
       userObj = {
-        username: params.username,
+        firstName: params.firstName,
+        lastName: params.lastName,
         confirmed: params.confirmed
       },
       authObj = {

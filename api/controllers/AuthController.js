@@ -7,9 +7,12 @@
  *
  * @docs        :: http://waterlock.ninja/documentation
  */
-// 'use strict';
-// var bcrypt = require('bcrypt');
 
 module.exports = require('waterlock').waterlocked({
+  /* e.g.
+    action: function(req, res){
+  
+    }
+  */
 
 });

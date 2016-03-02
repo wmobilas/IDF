@@ -37,12 +37,12 @@ module.exports = {
     },
 
     photo: {
-      type: 'photo',
+      type: 'string',
       required: false
     },
 
     birthDate: {
-      type: 'date',
+      type: 'string',
       required: false
     },
 

@@ -12,7 +12,7 @@ module.exports = {
       type: 'string',
       required: true
     },
-    
+
     position: {
       type: 'string',
       required: true

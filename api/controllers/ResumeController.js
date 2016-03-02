@@ -5,7 +5,8 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
-module.exports = {
+ module.exports = {
+
   register: function(req, res) {
     var params = req.params.all(),
       resumeObj = {
@@ -29,11 +30,11 @@ module.exports = {
       },
       //army experience
       experience = {
-        background: params.experience
+        experience: params.experience
       },
       //работа и года
       work = {
-        background: params.work
+        work: params.work
       },
       tags = {
         tags: params.tags
@@ -63,9 +64,9 @@ module.exports = {
         return res.redirect('/resume/new/');
       }
     });
-    Background.create({
+    Experience.create({
       resume: res.resume.id
-    }, backgroundObj).exec(function(err) {
+    }, experienceObj).exec(function(err) {
       if (err) {
         waterlock.logger.debug(err);
         return res.redirect('/resume/new/');
@@ -79,9 +80,9 @@ module.exports = {
         return res.redirect('/resume/new/');
       }
     });
-    Activity.create({
+    Work.create({
       resume: res.resume.id
-    }, activityObj).exec(function(err) {
+    }, workObj).exec(function(err) {
       if (err) {
         waterlock.logger.debug(err);
         return res.redirect('/resume/new/');
@@ -146,7 +147,7 @@ module.exports = {
   },
   update: function(req, res, next) {
     var params = req.params.all(),
-      rresumeObj = {
+      resumeObj = {
         ownerId: params.ownerId,
         idArmy: params.idArmy,
         about: params.about,
@@ -167,11 +168,11 @@ module.exports = {
       },
       //army experience
       experience = {
-        background: params.experience
+        experience: params.experience
       },
       //работа и года
       work = {
-        background: params.work
+        work: params.work
       },
       tags = {
         tags: params.tags
@@ -201,9 +202,9 @@ module.exports = {
             return res.redirect('/resume/edit/' + params.id);
           }
         });
-        Background.update({
+        Experience.update({
           resume: req.session.resume.id
-        }, backgroundObj).exec(function(err) {
+        }, experienceObj).exec(function(err) {
           if (err) {
             waterlock.logger.debug(err);
             return res.redirect('/resume/edit/' + params.id);
@@ -217,9 +218,9 @@ module.exports = {
             return res.redirect('/resume/edit/' + params.id);
           }
         });
-        Activity.update({
+        Work.update({
           resume: req.session.resume.id
-        }, activityObj).exec(function(err) {
+        }, workObj).exec(function(err) {
           if (err) {
             waterlock.logger.debug(err);
             return res.redirect('/resume/edit/' + params.id);
@@ -244,4 +245,4 @@ module.exports = {
     res.redirect('/resume/show/' + params.id);
 
   }
-};
+  };
