@@ -82,7 +82,8 @@ module.exports.connections = {
     port: '5432',
     ssl: true,
     password: '0aGpDiDNMMZFHoI24628WMtAG8',
-    database: 'dbtfnc8cu27tii'
+    database: 'dbtfnc8cu27tii',
+    poolSize: '5'
   }
 
   /***************************************************************************

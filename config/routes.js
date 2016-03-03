@@ -32,10 +32,29 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
+     'get /user/credentials/:id': 'AuthController.findOne',
+     'get /user': 'UserController.find',
+     'get /user/:id': 'UserController.findOne',
+     'get /resume': 'ResumeController.find',
+     'get /resume/:id': 'ResumeController.findOne',
+     'get /vacancy': 'ResumeController.find',
+     'get /vacancy/:id': 'ResumeController.findOne',
+
+     'post /login': 'AuthController.login', //email, password
+     'post /logout': 'AuthController.logout',
+     'post /user': 'UserController.register', //email, password
+     'post /update': 'UserController.update', //email, password
+     'post /user/delete/:id': 'UserController.destroy', //email, password
+     'post /resume/delete/:id': 'ResumeController.destroy', //email, password
+     'post /vacancy/delete/:id': 'VacancyController.destroy', //email, password
+     'post /resume': 'ResumeController.create', //ownerId
+     'post /vacancy': 'VacancyController.create', //ownerId
+     'post /resume/:id/activity/:childid': 'ResumeController.add'
+     //'post /:modelIdentity/:id/:collectionAttr/:childid': 'controllerIdentity.add'//, //ownerId
+
   // '/': {
   //   view: 'index'
-  // }
-  //,
+  // },
   //
   // 'get /register': {
   // //  view: 'base/signup'

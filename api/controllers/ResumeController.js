@@ -5,244 +5,34 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
- module.exports = {
+module.exports = {
+  destroy: function(req, res, next) {
+    var params = req.params.all();
+    Resume.findOneById(params.id).exec(function(err, resume) {
+      if (err) {
+        waterlock.logger.debug(err);
+        return res.redirect('/resume');
+      }
+      if (!resume) {
+        return res.json('Resume doesn\'t exist.');
+      }
 
-  register: function(req, res) {
-    var params = req.params.all(),
-      resumeObj = {
-        ownerId: params.ownerId,
-        idArmy: params.idArmy,
-        about: params.about,
-        phone: params.phone,
-        //желаемая должность если имеется
-        target_position: params.target_position,
-        rank: params.rank,
-        photo: params.photo,
-        draftDate: params.draftDate
-      },
-      //другая деятельность и значимые заслуги
-      activity = {
-        activities: params.activities
-      },
-      //учеба и года
-      education = {
-        education: params.education
-      },
-      //army experience
-      experience = {
-        experience: params.experience
-      },
-      //работа и года
-      work = {
-        work: params.work
-      },
-      tags = {
-        tags: params.tags
-      };
-    Resume.create(resumeObj)
-      .exec(function(err, resume) {
+      Resume.destroy({
+        id: resume.id
+      }).exec(function(err, record) {
         if (err) {
           waterlock.logger.debug(err);
-          return res.redirect('/resume/new');
+          return res.redirect('/resume');
         }
-        resume.save(function(err, resume) {
-          if (err) {
-            sailsLog('err', err);
-            return next(err);
-          }
-          Resume.publishCreate(resume);
 
-          return res.json(result);
+        Resume.publishUpdate(resume.id, {
+          id: resume.id,
+          action: ' has been destroyed.'
         });
-      });
 
-    Activity.create({
-      resume: res.resume.id
-    }, activityObj).exec(function(err) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return res.redirect('/resume/new/');
-      }
-    });
-    Experience.create({
-      resume: res.resume.id
-    }, experienceObj).exec(function(err) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return res.redirect('/resume/new/');
-      }
-    });
-    Education.create({
-      resume: res.resume.id
-    }, educationObj).exec(function(err) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return res.redirect('/resume/new/');
-      }
-    });
-    Work.create({
-      resume: res.resume.id
-    }, workObj).exec(function(err) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return res.redirect('/resume/new/');
-      }
-    });
-    Tag.create({
-      resume: res.resume.id
-    }, tagObj).exec(function(err) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return res.redirect('/resume/new/');
-      }
-    });
-
-  },
-  // route to [get] and show resume
-  show: function(req, res, next) {
-    var params = req.params.all();
-    Resume.findOne(params.id, function foundResume(err, resume) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return req.serverError();
-      }
-      if (!resume) {
-        waterlock.logger.debug('Resume not found.');
-        return next();
-      }
-      res.view({
-        resume: resume
+        Resume.publishDestroy(resume.id);
+        return res.json("Resume deleted successfully");
       });
     });
-  },
-  // route to [get] and show all resumes
-  index: function(req, res, next) {
-    Resume.find(function foundResumes(err, resumes) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return req.serverError();
-      }
-      res.view({
-        resumes: resumes
-      });
-    });
-  },
-  // route used to [get] resume fields for edit
-  edit: function(req, res, next) {
-    var params = req.params.all();
-    Resume.findOne(params.id, function foundResume(err, resume) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return req.serverError();
-      }
-      if (!resume) {
-        waterlock.logger.debug('Resume not found.');
-        return next();
-      }
-
-      res.view({
-        resume: resume
-      });
-    });
-  },
-  update: function(req, res, next) {
-    var params = req.params.all(),
-      resumeObj = {
-        ownerId: params.ownerId,
-        idArmy: params.idArmy,
-        about: params.about,
-        phone: params.phone,
-        //желаемая должность если имеется
-        target_position: params.target_position,
-        rank: params.rank,
-        photo: params.photo,
-        draftDate: params.draftDate
-      },
-      //другая деятельность и значимые заслуги
-      activity = {
-        activities: params.activities
-      },
-      //учеба и года
-      education = {
-        education: params.education
-      },
-      //army experience
-      experience = {
-        experience: params.experience
-      },
-      //работа и года
-      work = {
-        work: params.work
-      },
-      tags = {
-        tags: params.tags
-      };
-    Resume.findOne(params.id, function foundResume(err, resume) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return req.serverError();
-      }
-      if (!resume) {
-        waterlock.logger.debug('Resume not found.');
-        return res.JSON('Resume not found.');
-      } else {
-
-        Resume.update(params.id, resumeObj).exec(function(err) {
-          if (err) {
-            waterlock.logger.debug(err);
-            return res.redirect('/resume/edit/' + params.id);
-          }
-        });
-
-        Activity.update({
-          resume: req.session.resume.id
-        }, activityObj).exec(function(err) {
-          if (err) {
-            waterlock.logger.debug(err);
-            return res.redirect('/resume/edit/' + params.id);
-          }
-        });
-        Experience.update({
-          resume: req.session.resume.id
-        }, experienceObj).exec(function(err) {
-          if (err) {
-            waterlock.logger.debug(err);
-            return res.redirect('/resume/edit/' + params.id);
-          }
-        });
-        Education.update({
-          resume: req.session.resume.id
-        }, educationObj).exec(function(err) {
-          if (err) {
-            waterlock.logger.debug(err);
-            return res.redirect('/resume/edit/' + params.id);
-          }
-        });
-        Work.update({
-          resume: req.session.resume.id
-        }, workObj).exec(function(err) {
-          if (err) {
-            waterlock.logger.debug(err);
-            return res.redirect('/resume/edit/' + params.id);
-          }
-        });
-        Tag.update({
-          resume: req.session.resume.id
-        }, tagObj).exec(function(err) {
-          if (err) {
-            waterlock.logger.debug(err);
-            return res.redirect('/resume/edit/' + params.id);
-          }
-        });
-
-      }
-      res.view({
-        resume: resume
-      });
-    });
-
-    //req.session.resume.email = params.email;
-    res.redirect('/resume/show/' + params.id);
-
   }
-  };
+};
