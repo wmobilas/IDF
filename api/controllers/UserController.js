@@ -37,6 +37,7 @@ module.exports = require('waterlock').actions.user({
           req.session.user = user;
           req.session.authenticated = true;
           waterlock.engine.attachAuthToUser(auth, user, function(err) {
+
             if (err) {
               waterlock.logger.debug(err);
               res.redirect('user/new');
@@ -47,12 +48,21 @@ module.exports = require('waterlock').actions.user({
                 sailsLog('err', err);
                 return next(err);
               }
-
               user.action = " signed-up and logged-in.";
-
+              //add link to auth
+              // Auth.findOne({
+              //   id: user.id
+              // })
+              // .exec(function(e, auth) {
+              //   user.auth=auth;
+              //   user.save(function(err, res) {
+              //      console.log(res);
+              //    })
+              // });
+              
               User.publishCreate(user);
-
               waterlock.logger.debug('user login success');
+
               var jwtData = waterlock._utils.createJwt(req, res, user);
 
               Jwt.create({
@@ -78,6 +88,10 @@ module.exports = require('waterlock').actions.user({
               });
             });
           });
+
+          //
+
+          //
         });
     });
   },

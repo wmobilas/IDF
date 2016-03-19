@@ -37,24 +37,33 @@ module.exports.routes = {
      'get /user/:id': 'UserController.findOne',
      'get /resume': 'ResumeController.find',
      'get /resume/:id': 'ResumeController.findOne',
-     'get /vacancy': 'ResumeController.find',
-     'get /vacancy/:id': 'ResumeController.findOne',
+     'get /vacancy': 'VacancyController.find',
+     'get /vacancy/:id': 'VacancyController.findOne',
 
      'post /login': 'AuthController.login', //email, password
      'post /logout': 'AuthController.logout',
-     'post /user': 'UserController.register', //email, password
      'post /update': 'UserController.update', //email, password
+     'post /user': 'UserController.register', //email, password
      'post /user/delete/:id': 'UserController.destroy', //email, password
      'post /resume/delete/:id': 'ResumeController.destroy', //email, password
      'post /vacancy/delete/:id': 'VacancyController.destroy', //email, password
      'post /resume': 'ResumeController.create', //ownerId
      'post /vacancy': 'VacancyController.create', //ownerId
-     'post /resume/:id/activity/:childid': 'ResumeController.add'
+
+     'post /resume/:id/activity/': 'ResumeController.add',
+     'post /resume/:id/education/': 'ResumeController.add',
+     'post /resume/:id/activity/': 'ResumeController.add',
+     'post /resume/:id/experience/': 'ResumeController.add',
+     'post /resume/:id/tag/': 'ResumeController.add',
+     'post /resume/:id/work/': 'ResumeController.add',
      //'post /:modelIdentity/:id/:collectionAttr/:childid': 'controllerIdentity.add'//, //ownerId
 
-  // '/': {
-  //   view: 'index'
-  // },
+      // '/': {
+      //   view: 'index'
+      // },
+    //  '/home': {
+    //    view: 'home'
+    //  }
   //
   // 'get /register': {
   // //  view: 'base/signup'
