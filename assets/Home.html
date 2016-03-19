@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>שפיצים - תפקיד שתמיד חלמתה! - Home</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <meta property="og:site_name" content="שפיצים - תפקיד שתמיד חלמתה!">
     <meta property="og:title" content="שפיצים - תפקיד שתמיד חלמתה! ">
     <meta property="og:description" content="חיילים, או איש קבע מוסיפים קורות חיים ותפקיד שהם רוצים">
@@ -122,15 +123,31 @@
       .wsite-button-large .wsite-button-inner {
         font-size: 19px !important;
       }
-    </style>
-    <style>
+    .wsite-background:before {
+      content: "";
+position: fixed;
+left: 0;
+right: 0;
+z-index: -1;
+display: block;
+
+      background-image: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ),url("./files/1019111131.jpg") !important;
+      -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);
+      -o-filter: blur(1px);
+      -ms-filter: blur(1px);
+      filter:blur(1px);
+      background-repeat: no-repeat !important;
+      background-position: 50% 50% !important;
+      background-size: 100% !important;
+      background-color: transparent !important;
+      background: inherit;
+    }
       .wsite-background {
-        background-image: url("./files/1019111131.jpg") !important;
-        background-repeat: no-repeat !important;
-        background-position: 50% 50% !important;
-        background-size: 100% !important;
-        background-color: transparent !important;
-        background: inherit;
+  z-index: 0;
       }
       body.wsite-background {
         background-attachment: fixed !important;
