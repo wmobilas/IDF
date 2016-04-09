@@ -49,7 +49,11 @@ module.exports = require('waterlock').actions.user({
                 return next(err);
               }
               user.action = " signed-up and logged-in.";
-              //add link to auth
+
+
+              ///////////////
+              // adding link to auth (IT IS DANGEROUS TO OTHER TO SEE
+              // USER`S CREDENTIALS)
               // Auth.findOne({
               //   id: user.id
               // })
@@ -59,7 +63,9 @@ module.exports = require('waterlock').actions.user({
               //      console.log(res);
               //    })
               // });
-              
+              //////////////
+
+
               User.publishCreate(user);
               waterlock.logger.debug('user login success');
 
