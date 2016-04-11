@@ -60,7 +60,7 @@ module.exports = {
         return req.serverError();
       }
       res.view({
-        'index': resumes
+        'resumes': resumes
       });
     });
   }
