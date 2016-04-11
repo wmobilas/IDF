@@ -126,7 +126,7 @@ module.exports = require('waterlock').actions.user({
           return req.serverError();
         }
         res.view({
-          'index': users
+          'users': users
         });
       });
     },
