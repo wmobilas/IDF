@@ -31,28 +31,37 @@ module.exports.routes = {
    * `assets` directory)                                                      *
    *                                                                          *
    ***************************************************************************/
+   //VIEWS
+  'get /user': 'UserController.index',
+  'get /user/:id': 'UserController.show',
+  'get /resume': 'ResumeController.index',
+  'get /resume/:id': 'ResumeController.show',
+  'get /vacancy': 'VacancyController.index',
+  'get /vacancy/:id': 'VacancyController.show',
 
-  'get /user/credentials/:id': 'AuthController.findOne',
-  'get /user': 'UserController.find',
-  'get /user/:id': {
-    controller: 'UserController',
-    action: 'show'
-  },
-  'get /resume': 'ResumeController.find',
-  'get /resume/:id': 'ResumeController.findOne',
-  'get /vacancy': 'VacancyController.find',
-  'get /vacancy/:id': 'VacancyController.findOne',
+  //REST
+  'get /api/user/credentials/:id': 'AuthController.findOne',
+  'get /api/user': 'UserController.find',
+  'get /api/user/:id': 'UserController.findOne',
+  'get /api/resume': 'ResumeController.find',
+  'get /api/resume/:id': 'ResumeController.findOne',
+  'get /api/vacancy': 'VacancyController.find',
+  'get /api/vacancy/:id': 'VacancyController.findOne',
 
-  'post /login': 'AuthController.login', //email, password
-  'post /logout': 'AuthController.logout',
-  'post /update': 'UserController.update', //email, password
+  //USER
   'post /user': 'UserController.register', //email, password
   'post /user/delete/:id': 'UserController.destroy', //email, password
-  'post /resume/delete/:id': 'ResumeController.destroy', //email, password
-  'post /vacancy/delete/:id': 'VacancyController.destroy', //email, password
-  'post /resume': 'ResumeController.create', //ownerId
-  'post /vacancy': 'VacancyController.create', //ownerId
+  'post /login': 'AuthController.login', //email, password
+  'post /logout': 'AuthController.logout',//email, password
+  'post /update': 'UserController.update', //email, password
 
+  //VACANCY
+  'post /vacancy': 'VacancyController.create', //ownerId
+  'post /vacancy/delete/:id': 'VacancyController.destroy', //email, password
+
+  //RESUME
+  'post /resume': 'ResumeController.create', //ownerId
+  'post /resume/delete/:id': 'ResumeController.destroy', //email, password
   'post /resume/:id/activity/': 'ResumeController.add',
   'post /resume/:id/education/': 'ResumeController.add',
   'post /resume/:id/activity/': 'ResumeController.add',

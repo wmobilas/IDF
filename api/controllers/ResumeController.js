@@ -34,5 +34,34 @@ module.exports = {
         return res.json("Resume deleted successfully");
       });
     });
+  },
+  // route to [get] and show resume
+  show: function(req, res, next) {
+    var params = req.params.all();
+    Resume.findOne(params.id, function foundResume(err, resume) {
+      if (err) {
+        waterlock.logger.debug(err);
+        return req.serverError();
+      }
+      if (!resume) {
+        waterlock.logger.debug('Resume not found.');
+        return next();
+      }
+      res.view({
+        'resume': resume
+      });
+    });
+  },
+  // route to [get] and show all resumes
+  index: function(req, res, next) {
+    Resume.find(function foundResume(err, resumes) {
+      if (err) {
+        waterlock.logger.debug(err);
+        return req.serverError();
+      }
+      res.view({
+        'index': resumes
+      });
+    });
   }
 };

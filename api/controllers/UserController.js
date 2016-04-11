@@ -103,33 +103,33 @@ module.exports = require('waterlock').actions.user({
   },
   // route to [get] and show user
   show: function(req, res, next) {
-    var params = req.params.all();
-    User.findOne(params.id, function foundUser(err, user) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return req.serverError();
-      }
-      if (!user) {
-        waterlock.logger.debug('User not found.');
-        return next();
-      }
-      res.view({
-        'user': user
+      var params = req.params.all();
+      User.findOne(params.id, function foundUser(err, user) {
+        if (err) {
+          waterlock.logger.debug(err);
+          return req.serverError();
+        }
+        if (!user) {
+          waterlock.logger.debug('User not found.');
+          return next();
+        }
+        res.view({
+          'user': user
+        });
       });
-    });
-  },
-  // route to [get] and show all users
-  index: function(req, res, next) {
-    User.find(function foundUsers(err, users) {
-      if (err) {
-        waterlock.logger.debug(err);
-        return req.serverError();
-      }
-      res.view({
-        users: users
+    },
+    // route to [get] and show all users
+    index: function(req, res, next) {
+      User.find(function foundUsers(err, users) {
+        if (err) {
+          waterlock.logger.debug(err);
+          return req.serverError();
+        }
+        res.view({
+          'index': users
+        });
       });
-    });
-  },
+    },
   // route used to [get] user fields for edit
   edit: function(req, res, next) {
     var params = req.params.all();
