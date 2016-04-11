@@ -32,38 +32,41 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
-     'get /user/credentials/:id': 'AuthController.findOne',
-     'get /user': 'UserController.find',
-     'get /user/:id': 'UserController.findOne',
-     'get /resume': 'ResumeController.find',
-     'get /resume/:id': 'ResumeController.findOne',
-     'get /vacancy': 'VacancyController.find',
-     'get /vacancy/:id': 'VacancyController.findOne',
+  'get /user/credentials/:id': 'AuthController.findOne',
+  'get /user': 'UserController.find',
+  'get /user/:id': {
+    controller: 'UserController',
+    action: 'show'
+  },
+  'get /resume': 'ResumeController.find',
+  'get /resume/:id': 'ResumeController.findOne',
+  'get /vacancy': 'VacancyController.find',
+  'get /vacancy/:id': 'VacancyController.findOne',
 
-     'post /login': 'AuthController.login', //email, password
-     'post /logout': 'AuthController.logout',
-     'post /update': 'UserController.update', //email, password
-     'post /user': 'UserController.register', //email, password
-     'post /user/delete/:id': 'UserController.destroy', //email, password
-     'post /resume/delete/:id': 'ResumeController.destroy', //email, password
-     'post /vacancy/delete/:id': 'VacancyController.destroy', //email, password
-     'post /resume': 'ResumeController.create', //ownerId
-     'post /vacancy': 'VacancyController.create', //ownerId
+  'post /login': 'AuthController.login', //email, password
+  'post /logout': 'AuthController.logout',
+  'post /update': 'UserController.update', //email, password
+  'post /user': 'UserController.register', //email, password
+  'post /user/delete/:id': 'UserController.destroy', //email, password
+  'post /resume/delete/:id': 'ResumeController.destroy', //email, password
+  'post /vacancy/delete/:id': 'VacancyController.destroy', //email, password
+  'post /resume': 'ResumeController.create', //ownerId
+  'post /vacancy': 'VacancyController.create', //ownerId
 
-     'post /resume/:id/activity/': 'ResumeController.add',
-     'post /resume/:id/education/': 'ResumeController.add',
-     'post /resume/:id/activity/': 'ResumeController.add',
-     'post /resume/:id/experience/': 'ResumeController.add',
-     'post /resume/:id/tag/': 'ResumeController.add',
-     'post /resume/:id/work/': 'ResumeController.add',
-     //'post /:modelIdentity/:id/:collectionAttr/:childid': 'controllerIdentity.add'//, //ownerId
+  'post /resume/:id/activity/': 'ResumeController.add',
+  'post /resume/:id/education/': 'ResumeController.add',
+  'post /resume/:id/activity/': 'ResumeController.add',
+  'post /resume/:id/experience/': 'ResumeController.add',
+  'post /resume/:id/tag/': 'ResumeController.add',
+  'post /resume/:id/work/': 'ResumeController.add',
+  //'post /:modelIdentity/:id/:collectionAttr/:childid': 'controllerIdentity.add'//, //ownerId
 
-      // '/': {
-      //   view: 'index'
-      // },
-    //  '/home': {
-    //    view: 'home'
-    //  }
+  // '/': {
+  //   view: 'index'
+  // },
+  //  '/home': {
+  //    view: 'home'
+  //  }
   //
   // 'get /register': {
   // //  view: 'base/signup'
@@ -77,7 +80,7 @@ module.exports.routes = {
   //
   // '/logout': 'AccountController.logout'//,
 
-//  '/me': 'UserController.profile'
+  //  '/me': 'UserController.profile'
 
   /***************************************************************************
    *                                                                          *
