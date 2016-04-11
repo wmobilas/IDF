@@ -1,11 +1,14 @@
 <div class="container">
-    <% User.findOne(user.id, function foundUser(err, user) { %>
-    <h1><%= user.firstName %></h1>
+  <% User.findOne(user.id, function foundUser(err, user) { %>
 
-    <h3><%= user.lastName %></h3>
-    <hr>
-    <h3>token: <%- user.token %></h3>
+    <% _.each(user, function(user) { %>
+      <h1><%= user.firstName %></h1>
 
+      <h3><%= user.lastName %></h3>
+      <hr>
+      <h3>token: <%- user.token %></h3>
+
+      <% }) %>
     <% }) %>
     <a class="btn btn-medium btn-primary" href="/user/edit/<%= user.id %>">Edit</a>
 </div>
