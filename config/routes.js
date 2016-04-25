@@ -38,6 +38,7 @@ module.exports.routes = {
   'get /resume/:id': 'ResumeController.show',
   'get /vacancy': 'VacancyController.index',
   'get /vacancy/:id': 'VacancyController.show',
+  'get /presentation': {view:'slides'},
 
   //REST
   'get /api/user/credentials/:id': 'AuthController.findOne',
