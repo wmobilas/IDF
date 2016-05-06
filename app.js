@@ -22,6 +22,8 @@
 // no matter where we actually lift from.
 process.chdir(__dirname);
 
+app.use(express.static(__dirname + '/views'));
+app.use("/views",express.static(__dirname + "/views"));
 // Ensure a "sails" can be located:
 (function() {
   var sails;

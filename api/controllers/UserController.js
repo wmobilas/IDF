@@ -32,7 +32,7 @@ module.exports = require('waterlock').actions.user({
               err: err
             };
 
-            return res.redirect('/user/new');
+            return res.redirect('/registration');
           }
           req.session.user = user;
           req.session.authenticated = true;
@@ -40,7 +40,7 @@ module.exports = require('waterlock').actions.user({
 
             if (err) {
               waterlock.logger.debug(err);
-              res.redirect('user/new');
+              res.redirect('/registration');
             }
             user.online = true;
             user.save(function(err, user) {
@@ -89,15 +89,11 @@ module.exports = require('waterlock').actions.user({
                   result['user'] = user;
                 }
 
-                return res.json(result);
-                //return res.redirect('/user/show/' + user.id);
+                //return res.json(result);
+                return res.redirect('/user/show/' + user.id);
               });
             });
           });
-
-          //
-
-          //
         });
     });
   },
@@ -113,8 +109,10 @@ module.exports = require('waterlock').actions.user({
           waterlock.logger.debug('User not found.');
           return next();
         }
+
         res.view({
-          'user': user
+          'user': user,
+          'current_user':req.session.user
         });
       });
     },

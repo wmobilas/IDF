@@ -39,6 +39,11 @@ module.exports.routes = {
   'get /vacancy': 'VacancyController.index',
   'get /vacancy/:id': 'VacancyController.show',
   'get /presentation': {view:'slides'},
+  'get /login': '/login.html',
+  'get /home': '/home.html',
+  'get /vacancies': '/vacancies.html',
+  'get /resumes': '/resumes.html',
+  'get /registration': '/registration.html',
 
   //REST
   'get /api/user/credentials/:id': 'AuthController.findOne',

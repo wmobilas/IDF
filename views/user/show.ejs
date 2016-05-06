@@ -1351,49 +1351,53 @@
 <body>
 
   <div id="wrapper">
+
     <a href="http://www.readylabs.ca/andre/#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
 
-    <div id="sidebar" style="left: 0px;">
+    <div id="sidebar" style="left: 0px;
+    background-image:url('http://i.imgur.com/aQ57nA1.png');
+    background-color: black;background-size: 50%,contain">
+
       <div id="sidebar-wrapper" tabindex="0" style="overflow-y: hidden; outline: none;">
         <div id="sidebar-inner">
           <!-- Profile/logo section-->
           <div id="profile" class="clearfix">
             <div class="portrate hidden-xs"><img src="http://tranio.ru/upload/anna_kurjanovich_small.png" /></div>
             <div class="title">
-              <h2>Srećko Joksimović</h2>
-              <h3>University of Edinburgh</h3>
+              <h2>Jerusalem Petrenko</h2>
+              <h3>Palmahim Officer</h3>
             </div>
           </div>
           <!-- /Profile/logo section-->
 
           <!-- Main navigation-->
-          <div id="main-nav" style="padding-bottom: 38px;">
+          <div id="main-nav" style="padding-bottom: 38px; background-color:black">
             <ul id="navigation">
               <li class="currentmenu">
                 <a href="index.html">
                   <i class="fa fa-user"></i>
-                  <div class="text">About Me</div>
+                  <div class="text">Personal</div>
                 </a>
               </li>
 
               <li>
                 <a href="research.html">
                   <i class="fa fa-book"></i>
-                  <div class="text">Research</div>
+                  <div class="text">Vacancies</div>
                 </a>
               </li>
 
               <li>
                 <a href="publication.html">
                   <i class="fa fa-edit"></i>
-                  <div class="text">Publications</div>
+                  <div class="text">Resumes</div>
                 </a>
               </li>
 
               <li>
                 <a href="teaching.html">
                   <i class="fa fa-clock-o"></i>
-                  <div class="text">Teaching</div>
+                  <div class="text">Blog</div>
                 </a>
               </li>
 
@@ -1407,7 +1411,7 @@
               <li>
                 <a href="contact.html">
                   <i class="fa fa-calendar"></i>
-                  <div class="text">Contact Me</div>
+                  <div class="text">Support</div>
                 </a>
               </li>
 
@@ -1456,8 +1460,10 @@
                   <div class="biothumb">
                     <img alt="image" src="https://d919ce141ef35c47fc40-b9166a60eccf0f83d2d9c63fa65b9129.ssl.cf5.rackcdn.com/images/177483.max-620x600.jpg" class="img-responsive">
                     <div class="overlay">
-
+                      <%= if (user.firstName == current_user.lastName){ %>
                       <h1 class=""><%= user.firstName + " " + user.lastName %></h1>
+                      <%= }else{ %>
+                        <h1 class=""><%= "WORKING GOOD" %></h1><%=}%>
                       <ul class="list-unstyled">
                         <li>Director, Professor</li>
                         <li>The Stavros Niarchos Foundation Centre for Hellenic Studies</li>
