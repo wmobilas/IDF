@@ -1460,10 +1460,10 @@
                   <div class="biothumb">
                     <img alt="image" src="https://d919ce141ef35c47fc40-b9166a60eccf0f83d2d9c63fa65b9129.ssl.cf5.rackcdn.com/images/177483.max-620x600.jpg" class="img-responsive">
                     <div class="overlay">
-                      <%= if (user.firstName == current_user.lastName){ %>
+                      <%= if (user.firstName == req.session.user.lastName){ %>
                       <h1 class=""><%= user.firstName + " " + user.lastName %></h1>
                       <%= }else{ %>
-                        <h1 class=""><%= "WORKING GOOD" %></h1><%=}%>
+                        <h1 class=""><%= "WORKING GOOD + req.session.user.firstName + " " + req.session.user.lastName" %></h1><%=}%>
                       <ul class="list-unstyled">
                         <li>Director, Professor</li>
                         <li>The Stavros Niarchos Foundation Centre for Hellenic Studies</li>

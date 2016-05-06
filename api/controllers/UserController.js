@@ -111,8 +111,7 @@ module.exports = require('waterlock').actions.user({
         }
 
         res.view({
-          'user': user,
-          'current_user':req.session.user
+          'user': user
         });
       });
     },
