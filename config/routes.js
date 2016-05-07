@@ -31,7 +31,12 @@ module.exports.routes = {
    * `assets` directory)                                                      *
    *                                                                          *
    ***************************************************************************/
+
    //VIEWS
+   '/': {
+     view: 'index'
+   },
+
   'get /user': 'UserController.index',
   'get /user/:id': 'UserController.show',
   'get /resume': 'ResumeController.index',
@@ -39,11 +44,11 @@ module.exports.routes = {
   'get /vacancy': 'VacancyController.index',
   'get /vacancy/:id': 'VacancyController.show',
   'get /presentation': {view:'slides'},
-  'get /login': '/login.html',
-  'get /home': '/home.html',
-  'get /vacancies': '/vacancies.html',
-  'get /resumes': '/resumes.html',
-  'get /registration': '/registration.html',
+  'get /login': {view:'login'},
+  'get /home': {view:'index'},
+  'get /vacancies': {view:'vacancies'},
+  'get /resumes': {view:'resumes'},
+  'get /registration': {view:'registration'},
 
   //REST
   'get /api/user/credentials/:id': 'AuthController.findOne',
@@ -76,9 +81,7 @@ module.exports.routes = {
   'post /resume/:id/work/': 'ResumeController.add',
   //'post /:modelIdentity/:id/:collectionAttr/:childid': 'controllerIdentity.add'//, //ownerId
 
-  // '/': {
-  //   view: 'index'
-  // },
+
   //  '/home': {
   //    view: 'home'
   //  }
