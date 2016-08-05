@@ -24,9 +24,6 @@ process.chdir(__dirname);
 
 app.use(express.static(__dirname + '/views'));
 app.use("/views",express.static(__dirname + "/views"));
-app.engine('html', require('ejs').renderFile);
-app.engine('ejs', require('ejs').renderFile);
-app.engine('jade', require('jade').renderFile);
 // Ensure a "sails" can be located:
 (function() {
   var sails;
