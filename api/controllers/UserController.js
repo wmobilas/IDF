@@ -109,10 +109,10 @@ module.exports = require('waterlock').actions.user({
           waterlock.logger.debug('User not found.');
           return next();
         }
-        res.locals.layout = 'views/layoutShow';
+        res.locals.layout = 'layoutShow';
         res.view({
           'user': user
-        });
+        }, { layout: 'layoutShow' });
       });
     },
     // route to [get] and show all users
