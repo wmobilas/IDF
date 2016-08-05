@@ -34,7 +34,10 @@ module.exports.routes = {
 
    //VIEWS
    '/': {
-     view: 'index', {layout: null}
+     view: 'index',
+    locals: {
+      layout: 'false'
+    }
    },
 
   'get /user': 'UserController.index',
