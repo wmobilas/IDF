@@ -36,7 +36,6 @@ module.exports.routes = {
    '/': {
      view: 'index'
      locals: {
-       layout:false,
        _layoutFile: null
      }
    },
