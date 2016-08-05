@@ -108,21 +108,16 @@
                 <div class="biothumb">
                   <img alt="image" src="https://d919ce141ef35c47fc40-b9166a60eccf0f83d2d9c63fa65b9129.ssl.cf5.rackcdn.com/images/177483.max-620x600.jpg" class="img-responsive">
                   <div class="overlay">
-                    <%= if (user){ %>
-                      <h1 class=""><%= user.firstName + " " + user.lastName %></h1>
-                      <%=}else if (req.session.user){%>
-                        <h1 class=""><%= "WORKING GOOD" + req.session.user.firstName + " " + req.session.user.lastName" %></h1>
-                        <%=}%>
-                          <ul class="list-unstyled">
-                            <li>Director, Professor</li>
-                            <li>The Stavros Niarchos Foundation Centre for Hellenic Studies</li>
-                            <li>Simon Fraser University</li>
-                          </ul>
-
-                      <!--    <a class="btn btn-medium btn-primary" href="/user/edit/<%= user.id %>">Edit</a>
-                  --></div>
-
-
+                    <h1 class=""><%= user.firstName%></h1>
+                    <h1 class=""><%= req.session.user.lastName%></h1>
+                    <ul class="list-unstyled">
+                      <li>Director, Professor</li>
+                      <li>The Stavros Niarchos Foundation Centre for Hellenic Studies</li>
+                      <li>Simon Fraser University</li>
+                    </ul>
+                    <!--    <a class="btn btn-medium btn-primary" href="/user/edit/<%= user.id %>">Edit</a>
+                  -->
+                  </div>
                 </div>
 
               </div>
