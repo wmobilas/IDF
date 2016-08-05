@@ -34,10 +34,7 @@ module.exports.routes = {
 
    //VIEWS
    '/': {
-     view: 'index',
-    locals: {
-      layout: 'false'
-    }
+     view: 'index'
    },
 
   'get /user': 'UserController.index',
@@ -46,12 +43,12 @@ module.exports.routes = {
   'get /resume/:id': 'ResumeController.show',
   'get /vacancy': 'VacancyController.index',
   'get /vacancy/:id': 'VacancyController.show',
-  'get /presentation': {view:'slides', {layout: null}},
-  'get /login': {view:'login', {layout: null}},
-  'get /home': {view:'index', {layout: null}},
-  'get /vacancies': {view:'vacancies', {layout: null}},
-  'get /resumes': {view:'resumes', {layout: null}},
-  'get /registration': {view:'registration', {layout: null}},
+  'get /presentation': {view:'slides'},
+  'get /login': {view:'login'},
+  'get /home': {view:'index'},
+  'get /vacancies': {view:'vacancies'},
+  'get /resumes': {view:'resumes'},
+  'get /registration': {view:'registration'},
 
   //REST
   'get /api/user/credentials/:id': 'AuthController.findOne',
