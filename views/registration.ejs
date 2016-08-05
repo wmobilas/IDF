@@ -1108,16 +1108,35 @@
     </div>
 
     <div class="main-wrap">
-      <div class="container">
-        <div class="content-wrap" style="float:left">
+      <div class="container" style="float:left">
+        <div class="content-wrap">
           <div id="wsite-content" class="wsite-elements wsite-not-footer">
             <div>
               <form enctype="multipart/form-data" action="http://idfhr.herokuapp.com/user" method="POST" id="form-644481733426030538" accept-charset="UTF-8" target="form-644481733426030538-target-1458328401843">
                 <div id="644481733426030538-form-parent" class="wsite-form-container" style="margin-top:10px;">
                   <ul class="formlist" id="644481733426030538-form-list">
-                    <h2 style="
-                    font-weight: 400 !important;
-                    font-style: normal !important;">Register</h2>
+
+                    <h2 class="wsite-content-title" style="text-align:left; font-family: 'Roboto';     src: url('../fonts/Roboto-Regular-webfont.eot');     src: local(Roboto Regular), local(Roboto-Regular),          url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),          url('../fonts/Roboto-Regular-webfont.woff') format('woff'),          url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),          url('../fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');     font-weight: normal;     font-style: normal;">Register</h2>
+
+                    <div>
+                      <div class="wsite-form-field wsite-name-field" style="margin:5px 0px 5px 0px;">
+                        <label class="wsite-form-label" for="input-976353996249641404">Enter Name and Lastname
+                          <span class="form-required">*</span>
+                        </label>
+                        <div style="clear:both;"></div>
+                        <div class="wsite-form-input-container wsite-form-left wsite-form-input-first-name">
+                          <input id="input-976353996249641404" class="wsite-form-input wsite-input" type="text" name="firstName" placeholder="Firstname">
+                          <label class="wsite-form-sublabel" for="input-976353996249641404">Firstname</label>
+                        </div>
+                        <div class="wsite-form-input-container wsite-form-right wsite-form-input-last-name">
+                          <input id="input-976353996249641404-1" class="wsite-form-input wsite-input" type="text" name="lastName" placeholder="Lastname">
+                          <label class="wsite-form-sublabel" for="input-976353996249641404-1">Lastname</label>
+                        </div>
+                        <div id="instructions-976353996249641404" class="wsite-form-instructions" style="display:none;"></div>
+                      </div>
+                      <div style="clear:both;"></div>
+                    </div>
+
                     <div>
                       <div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
                         <label class="wsite-form-label" for="input-439479152712405925">Email
@@ -1126,6 +1145,7 @@
                         <div class="wsite-form-input-container">
                           <input id="input-439479152712405925" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="email">
                         </div>
+                        <div id="instructions-439479152712405925" class="wsite-form-instructions" style="display:none;"></div>
                       </div>
                     </div>
 
@@ -1137,9 +1157,50 @@
                         <div class="wsite-form-input-container">
                           <input id="input-220061729930636021" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="password">
                         </div>
+                        <div id="instructions-220061729930636021" class="wsite-form-instructions" style="display:none;"></div>
                       </div>
                     </div>
 
+                    <div>
+                      <div class="wsite-form-field" style="margin:5px 0px 0px 0px;">
+                        <label class="wsite-form-label" for="input-611196410460153581">Current situation
+                          <span class="form-required">*</span>
+                        </label>
+                        <div class="wsite-form-radio-container">
+                          <select name="_u611196410460153581" class="form-select">
+                            <option value="לפני גיוס">לפני גיוס</option>
+                            <option value="חייל">חייל</option>
+                            <option value="איש קבה">איש קבה</option>
+                            <option value="קצין">קצין</option>
+                            <option value="א''צ">א''צ</option>
+                          </select>
+
+                        </div>
+                        <div id="instructions-Current situation" class="wsite-form-instructions" style="display:none;"></div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="wsite-form-field wsite-phone-field" style="margin:5px 0px 0px 0px;">
+                        <label class="wsite-form-label" for="input-755198011221594664">Phone Number
+                          <span class="form-required">*</span>
+                        </label>
+                        <div style="clear:both;"></div>
+                        <div class="wsite-form-input-container wsite-form-left wsite-form-input-phone-first">
+                          <input id="input-755198011221594664" class="wsite-form-input wsite-input" type="text" name="_u755198011221594664[area_code]" onkeyup="if(this.value.length==3){document.getElementById('input-755198011221594664-1').focus()}">
+                        </div>
+                        <div class="wsite-form-phone-separator">-</div>
+                        <div class="wsite-form-input-container wsite-form-left wsite-form-input-phone-second">
+                          <input id="input-755198011221594664-1" class="wsite-form-input" type="text" name="_u755198011221594664[extension]" onkeyup="if(this.value.length==3){document.getElementById('input-755198011221594664-2').focus()}">
+                        </div>
+                        <div class="wsite-form-phone-separator">-</div>
+                        <div class="wsite-form-input-container wsite-form-right wsite-form-input-phone-third" style="margin-bottom:5px; float:left;">
+                          <input id="input-755198011221594664-2" class="wsite-form-input" type="text" name="_u755198011221594664[number]">
+                        </div>
+                        <div id="instructions-755198011221594664" class="wsite-form-instructions" style="display:none;"></div>
+                      </div>
+                      <div style="clear:both;"></div>
+                    </div>
                   </ul>
                 </div>
                 <div style="display:none; visibility:hidden;">
