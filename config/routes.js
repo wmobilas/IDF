@@ -34,7 +34,7 @@ module.exports.routes = {
 
    //VIEWS
    '/': {
-     view: 'index'
+     view: 'index',
      locals: {
        _layoutFile: null
      }
